@@ -1,0 +1,83 @@
+=== ACCOUNT SAMPLE (Showing 10 mixed accounts) ===
+    account_id creation_date   device_id activity_level kyc_tier  is_mule behavior_type
+9   ACC_87C33A    2025-12-12  DEV_D0E694            low    tier2     True      mule_hop
+18  ACC_0A611D    2025-12-21  DEV_AC486D            low    tier3     True      mule_hop
+5   ACC_E28BDF    2025-12-30  DEV_4E60BE            low    tier1     True      mule_hop
+27  ACC_B2C831    2025-12-06  DEV_57B659            low    tier1    False        normal
+20  ACC_B0A471    2025-12-30  DEV_4651AC            low    tier3     True  mule_cashout
+6   ACC_7C3ED3    2025-12-09  DEV_0E9176           high    tier2     True  mule_cashout
+11  ACC_D79C5C    2025-12-14  DEV_D5E387            low    tier2     True  mule_cashout
+17  ACC_1131A8    2025-12-21  DEV_763296            low    tier3     True      mule_hop
+29  ACC_D065F9    2025-12-28  DEV_F53C72           high    tier1    False        normal
+13  ACC_6464F8    2025-12-10  DEV_CF75A6            low    tier2     True      mule_hop
+
+=== GENERATED CHAINS (TRANSACTION FLOWS) ===
+
+--- 🟢 LEGIT (Hard Negative) | Chain ID: CHAIN_HN_DORMANT_DA00 ---
+          timestamp source_account target_account  amount
+2026-06-09 10:00:00     ACC_E59182     ACC_62B200 10000.0
+2026-06-09 10:10:00     ACC_62B200     ACC_E59182   500.0
+
+--- 🟢 LEGIT (Hard Negative) | Chain ID: CHAIN_HN_SALARY_77AC ---
+          timestamp source_account target_account   amount
+2026-06-06 08:00:00  EXT_CORP_1CC1     ACC_26BA2F 200000.0
+2026-06-06 10:01:00     ACC_26BA2F     ACC_2C4D75  50000.0
+2026-06-06 10:08:00     ACC_26BA2F     ACC_CF3726  50000.0
+2026-06-06 10:08:00     ACC_26BA2F     ACC_34C2A2  50000.0
+2026-06-06 10:13:00     ACC_26BA2F     ACC_6080B2  50000.0
+
+--- 🟢 LEGIT (Hard Negative) | Chain ID: CHAIN_HN_SHARED_DEV_A7B5 ---
+          timestamp source_account target_account  amount
+2026-06-08 10:00:00     ACC_FDD737     ACC_F2BEE5  5000.0
+2026-06-08 11:00:00     ACC_F2BEE5     ACC_FDD737  1500.0
+
+--- 🟢 LEGIT (Hard Negative) | Chain ID: CHAIN_HN_SMB_E1FD ---
+          timestamp source_account target_account  amount
+2026-06-07 10:00:00     ACC_B2C831     ACC_4BDB94  2193.0
+2026-06-07 10:15:00     ACC_E08ACB     ACC_4BDB94  1824.0
+2026-06-07 10:21:00     ACC_D065F9     ACC_4BDB94  1510.0
+2026-06-07 10:40:00     ACC_40E135     ACC_4BDB94  1327.0
+2026-06-07 12:56:00     ACC_4BDB94     ACC_9781E1  6168.6
+
+--- 🟢 LEGIT (Hard Negative) | Chain ID: CHAIN_HN_SPLIT_BE36 ---
+          timestamp source_account target_account  amount
+2026-06-10 10:00:00     ACC_2E99FE  EXT_REST_1874  3000.0
+2026-06-10 10:27:00     ACC_2634A6     ACC_2E99FE  1000.0
+2026-06-10 10:30:00     ACC_834B48     ACC_2E99FE  1000.0
+2026-06-10 10:35:00     ACC_EAE603     ACC_2E99FE  1000.0
+
+--- 🔴 MULE | Chain ID: CHAIN_MULE_2HOP_476C ---
+          timestamp  source_account target_account  amount
+2026-06-01 10:00:00 EXT_VICTIM_7A88     ACC_00D648 15000.0
+2026-06-01 10:23:00      ACC_00D648     ACC_8DC7C2 15000.0
+2026-06-01 11:20:00      ACC_8DC7C2     ACC_2DFB40 15000.0
+
+--- 🔴 MULE | Chain ID: CHAIN_MULE_2HOP_A7F6 ---
+          timestamp  source_account target_account  amount
+2026-06-04 10:00:00 EXT_VICTIM_F025     ACC_EDED78  5000.0
+2026-06-04 10:13:00      ACC_EDED78     ACC_6464F8  5000.0
+2026-06-04 11:03:00      ACC_6464F8     ACC_8DBF0A  5000.0
+
+--- 🔴 MULE | Chain ID: CHAIN_MULE_3HOP_9B48 ---
+          timestamp  source_account target_account  amount
+2026-06-02 10:00:00 EXT_VICTIM_1677     ACC_271103 25000.0
+2026-06-02 10:53:00      ACC_271103     ACC_5A95D1 25000.0
+2026-06-02 11:01:00      ACC_5A95D1     ACC_E28BDF 25000.0
+2026-06-02 11:50:00      ACC_E28BDF     ACC_7C3ED3 25000.0
+
+--- 🔴 MULE | Chain ID: CHAIN_MULE_4HOP_BC4C ---
+          timestamp  source_account target_account  amount
+2026-06-03 10:00:00 EXT_VICTIM_F3FB     ACC_8976DF 50000.0
+2026-06-03 10:32:00      ACC_8976DF     ACC_9259EF 50000.0
+2026-06-03 10:56:00      ACC_9259EF     ACC_87C33A 50000.0
+2026-06-03 11:48:00      ACC_87C33A     ACC_FAB72B 50000.0
+2026-06-03 11:55:00      ACC_FAB72B     ACC_D79C5C 50000.0
+
+--- 🔴 MULE | Chain ID: CHAIN_MULE_5HOP_33D6 ---
+          timestamp  source_account target_account   amount
+2026-06-05 10:00:00 EXT_VICTIM_09DD     ACC_8E5D73 100000.0
+2026-06-05 10:53:00      ACC_8E5D73     ACC_1E262D 100000.0
+2026-06-05 11:46:00      ACC_1E262D     ACC_1131A8 100000.0
+2026-06-05 12:11:00      ACC_1131A8     ACC_0A611D 100000.0
+2026-06-05 12:59:00      ACC_0A611D     ACC_9BDBAD 100000.0
+2026-06-05 13:14:00      ACC_9BDBAD     ACC_B0A471 100000.0

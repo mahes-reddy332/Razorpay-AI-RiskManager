@@ -1,0 +1,19 @@
+# Python environments
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# Testing
+.pytest_cache/
+
+# Generated Data & Outputs
+data/*.csv
+outputs/audit_log.json
+
+# IDEs and System files
+.vscode/
+.idea/
+.DS_Store
+*.log
