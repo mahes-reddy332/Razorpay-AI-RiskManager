@@ -151,12 +151,17 @@ class FraudRiskAuditor:
                 
             # 4. FINAL FLAG
             record["score"] = score
-            record["decision"] = "FLAG_MULE"
-            exp = f"Flagged: {pt_ratio*100:.0f}% of inflow ({trigger_amt} INR) was forwarded within 24 hours. "
+            
+            exp = f"{pt_ratio*100:.0f}% of inflow ({trigger_amt} INR) was forwarded within 24 hours. "
             exp += f"The transaction is part of a tight {node_count}-node rapid chain. "
-            if is_dormant:
+            
+            if score >= 1.0:
+                record["decision"] = "FLAG_MULE"
                 exp += f"Account was highly anomalous (dormant for {dormancy_days} days prior to this activity)."
-            record["explanation"] = exp
+                record["explanation"] = "Flagged: " + exp
+            else:
+                record["decision"] = "MANUAL_REVIEW_REQUIRED"
+                record["explanation"] = "Borderline: " + exp + "Account was active, lacking the full dormancy signature. Requires manual review."
             
         except ValueError as e:
             record["status"] = "DEGRADED"

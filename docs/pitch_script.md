@@ -42,11 +42,11 @@
 *   "Before talking about that roadmap, I want to show resilience. What happens if upstream logs break and we get a transaction with a missing timestamp?"
 *   "Instead of crashing, our FraudRiskAuditor traps the exception, aborts the score, and generates a JSON audit log marking the account for `MANUAL_REVIEW_REQUIRED` due to `INSUFFICIENT_DATA`."
 
-## 7. Future Scope: Risk Waterfall & LLM Copilot (proposed future architecture — not implemented in this submission)
+## 7. The Risk Waterfall & Level 2 LLM Copilot
 *   "If our false-positive rate held constant at 100,000 legitimate users, we would flag around 1,290 innocent accounts. While error rates rarely scale perfectly linearly in practice, this is a 50% improvement over our baseline MVP rules."
-*   "To handle those remaining edge cases—like the compromised Hospital cash-out—we designed a Level 1 / Level 2 Architecture."
-*   "Level 1 is what we built: The Real-Time Graph executing in milliseconds."
-*   "Level 2 is our LLM Copilot (proposed future architecture — not implemented in this submission). Instead of a human analyst, an LLM would asynchronously read our structured JSON audit logs, reasoning through conflicting metadata to catch subtle behavioral anomalies that rigid rules miss."
+*   "To handle those remaining edge cases—like the compromised Hospital cash-out or the corrupted timestamps—we built a Level 1 / Level 2 Architecture."
+*   "Level 1 is what you've seen: The Real-Time Graph executing in milliseconds."
+*   "Level 2 is our LLM Copilot (`l2_copilot.py`). Instead of a human analyst, we implemented a standalone Pydantic script that uses Gemini 2.5 Flash to asynchronously read our structured JSON audit logs, reasoning through conflicting metadata to catch subtle behavioral anomalies that rigid rules miss."
 
 ## 8. Close
-*   "Explainable, operationally safe, and methodologically honest. Thank you."
+*   "Explainable, operationally safe, methodologically honest, and powered by a working LLM Copilot. Thank you."

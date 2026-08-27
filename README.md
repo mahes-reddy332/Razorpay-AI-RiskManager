@@ -85,12 +85,12 @@ The results reported above are evaluated on synthetic data generated for this Bu
 
 ---
 
-## Future Scope: The Risk Waterfall & Level 2 LLM Copilot (proposed future architecture — not implemented in this submission)
+## Future Scope & Scalability: The Risk Waterfall & Level 2 LLM Copilot
 
-To scale this engine, we propose a Level 1 / Level 2 Architecture:
+To scale this engine, we implemented a hybrid Level 1 / Level 2 Architecture:
 
-**Level 1: The Real-Time Graph Switch (Implemented)**
+**Level 1: The Real-Time Graph Switch (Implemented in `src/model_v2.py`)**
 Executes in milliseconds using NetworkX and a composite weighted score (Velocity, Topology, MCC).
 
-**Level 2: The LLM Copilot (proposed future architecture — not implemented in this submission)**
-For the ambiguous edge cases or corrupted data logs (as engineered in Phase 5), Level 1 marks the account as `MANUAL_REVIEW_REQUIRED`. An LLM Agent would read the rich `audit_log.json`, reason across unstructured metadata combinations, and generate an investigation report.
+**Level 2: The LLM Copilot (Implemented in `src/l2_copilot.py`)**
+For the ambiguous edge cases or corrupted data logs (as engineered in Phase 5), Level 1 marks the account as `MANUAL_REVIEW_REQUIRED`. Instead of a human wasting time, our standalone `l2_copilot.py` asynchronously reads the structured `audit_log.json`, reasons across unstructured metadata combinations, and generates a strict, Pydantic-validated `FRAUD/SAFE` recommendation using Google's Gemini 2.5 Flash.

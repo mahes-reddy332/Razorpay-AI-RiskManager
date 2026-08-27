@@ -23,7 +23,7 @@ The final parameters (`node_thresh=8`, `top_weight=0.6`, `mcc_weight=0.0`, `dec_
 
 ### The Single False Negative (The Compromised MCC)
 In our honest v2 test run, exactly one mule chain slipped through our defenses. Upon inspection, this mule account successfully routed its cash-out through an MCC registered as `HOSPITAL`. Because our rules dynamically weighed topology and allowed some leeway for safe MCCs (to protect legitimate businesses), this sophisticated evasion tactic worked. 
-This is not a bug; it is a real, documented pattern where fraud rings use fraudulently-registered or compromised safe merchant accounts to launder funds. This specific false negative is the exact reason our roadmap includes the Level 2 LLM Copilot (proposed future architecture) — while rigid graph rules might pass a `HOSPITAL` transaction, an LLM reasoning over the full JSON context can detect the subtle behavioral anomalies of a compromised merchant.
+This is not a bug; it is a real, documented pattern where fraud rings use fraudulently-registered or compromised safe merchant accounts to launder funds. This specific false negative is exactly why we built the Level 2 LLM Copilot (`src/l2_copilot.py`) — while rigid graph rules might pass a `HOSPITAL` transaction, our LLM script reasons over the full JSON context to detect the subtle behavioral anomalies of a compromised merchant.
 
 ## 3. Explainable Detection Engine vs. GNNs
 - **Decision:** We chose a deterministic, rule-based temporal graph traversal over a Graph Neural Network (GNN).
@@ -37,12 +37,11 @@ Our detection logic operates in a tiered pipeline yielding a composite score:
 2. **Temporal Tracer:** Executes a bidirectional Breadth-First Search (BFS). Extracts the topological footprint (node count) to recognize the "fan-in/fan-out" signatures of legitimate SMBs/Salary accounts.
 3. **Metadata Contextualization:** Extracts the Terminal Sink Node and checks its Merchant Category Code (MCC).
 
-## 5. The Future Scope: Risk Waterfall & Level 2 LLM Copilot (proposed future architecture — not implemented in this submission)
-To scale this architecture, we propose a hybrid L1/L2 framework:
+## 5. Scalability: Risk Waterfall & Level 2 LLM Copilot
+To scale this architecture, we implemented a hybrid L1/L2 framework:
 
-### Level 1: Real-Time Engine
-The NetworkX metadata graph operates in milliseconds using the composite scores derived during the validation sweep.
+### Level 1: Real-Time Engine (`src/model_v2.py` / `src/audit.py`)
+The NetworkX metadata graph operates in milliseconds using the composite scores derived during the validation sweep. If scores are extremely close to the borderline (or if upstream data is corrupted), it yields `MANUAL_REVIEW_REQUIRED`.
 
-### Level 2: Asynchronous LLM Copilot (proposed future architecture — not implemented in this submission)
-If Level 1 encounters missing or corrupted upstream data logs (as engineered in Phase 5), the system gracefully degrades to a `MANUAL_REVIEW_REQUIRED` state and outputs a structured JSON audit log. 
-In the proposed future architecture — not implemented in this submission, an **LLM Agent** consumes this JSON log. The LLM acts as an L2 Copilot, dynamically reasoning across unstructured metadata to output a final investigation recommendation.
+### Level 2: Asynchronous LLM Copilot (`src/l2_copilot.py`)
+Instead of a human analyst, our Level 2 script uses `google-genai` and Pydantic to read the `audit_log.json`. It passes the data to Gemini 2.5 Flash using structured outputs, forcing a highly constrained, rule-bound `FRAUD/SAFE` decision along with its reasoning. This achieves the analytical depth of an investigator without breaking the speed of L1.
