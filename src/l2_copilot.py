@@ -94,12 +94,11 @@ def main():
     with open(input_path) as f:
         audit_records = json.load(f)
 
-    # Accept either a single record or a list of records
-    if isinstance(audit_records, dict):
-        audit_records = [audit_records]
-
     # ONLY PROCESS ACCOUNTS FLAGGED FOR MANUAL REVIEW
     review_records = [r for r in audit_records if r.get("decision") == "MANUAL_REVIEW_REQUIRED"]
+
+    # Optional: If using a free-tier key, uncomment the line below to test on a small sample.
+    # review_records = review_records[:5]
 
     if not review_records:
         print("No accounts flagged for MANUAL_REVIEW_REQUIRED found in the input file.")

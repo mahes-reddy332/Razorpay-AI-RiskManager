@@ -138,7 +138,7 @@ class FraudRiskAuditor:
             score = 0.6
             if is_dormant: score += 0.4
             
-            hops, node_count = get_chain_metrics(self.G, node)
+            hops, node_count, sinks = get_chain_metrics(self.G, node)
             record["signals"]["chain_nodes"] = node_count
             record["signals"]["chain_hops"] = hops
             

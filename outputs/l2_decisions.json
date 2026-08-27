@@ -1,0 +1,102 @@
+[
+  {
+    "account_id": "ACC_3102DFDA",
+    "input_record": {
+      "account_id": "ACC_3102DFDA",
+      "status": "OK",
+      "score": 0.6,
+      "decision": "MANUAL_REVIEW_REQUIRED",
+      "explanation": "Borderline: 94% of inflow (64047.85 INR) was forwarded within 24 hours. The transaction is part of a tight 5-node rapid chain. Account was active, lacking the full dormancy signature. Requires manual review.",
+      "signals": {
+        "dormancy_days": 20,
+        "pass_through_ratio": 0.94,
+        "chain_nodes": 5,
+        "chain_hops": 4
+      }
+    },
+    "l2_decision": null,
+    "status": "failed",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 18.887025057s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}",
+    "fallback": "MANUAL_REVIEW_REQUIRED"
+  },
+  {
+    "account_id": "ACC_0F9326E4",
+    "input_record": {
+      "account_id": "ACC_0F9326E4",
+      "status": "OK",
+      "score": 0.6,
+      "decision": "MANUAL_REVIEW_REQUIRED",
+      "explanation": "Borderline: 100% of inflow (96015.39 INR) was forwarded within 24 hours. The transaction is part of a tight 6-node rapid chain. Account was active, lacking the full dormancy signature. Requires manual review.",
+      "signals": {
+        "dormancy_days": 18,
+        "pass_through_ratio": 1.0,
+        "chain_nodes": 6,
+        "chain_hops": 5
+      }
+    },
+    "l2_decision": null,
+    "status": "failed",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 14.963265665s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}",
+    "fallback": "MANUAL_REVIEW_REQUIRED"
+  },
+  {
+    "account_id": "ACC_F8FBF2B0",
+    "input_record": {
+      "account_id": "ACC_F8FBF2B0",
+      "status": "OK",
+      "score": 0.6,
+      "decision": "MANUAL_REVIEW_REQUIRED",
+      "explanation": "Borderline: 100% of inflow (153345.95 INR) was forwarded within 24 hours. The transaction is part of a tight 6-node rapid chain. Account was active, lacking the full dormancy signature. Requires manual review.",
+      "signals": {
+        "dormancy_days": 21,
+        "pass_through_ratio": 1.0,
+        "chain_nodes": 6,
+        "chain_hops": 5
+      }
+    },
+    "l2_decision": null,
+    "status": "failed",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 11.166870894s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}",
+    "fallback": "MANUAL_REVIEW_REQUIRED"
+  },
+  {
+    "account_id": "ACC_5671189F",
+    "input_record": {
+      "account_id": "ACC_5671189F",
+      "status": "OK",
+      "score": 0.6,
+      "decision": "MANUAL_REVIEW_REQUIRED",
+      "explanation": "Borderline: 100% of inflow (165042.22 INR) was forwarded within 24 hours. The transaction is part of a tight 7-node rapid chain. Account was active, lacking the full dormancy signature. Requires manual review.",
+      "signals": {
+        "dormancy_days": 22,
+        "pass_through_ratio": 1.0,
+        "chain_nodes": 7,
+        "chain_hops": 6
+      }
+    },
+    "l2_decision": null,
+    "status": "failed",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 7.223053087s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}",
+    "fallback": "MANUAL_REVIEW_REQUIRED"
+  },
+  {
+    "account_id": "ACC_4E8D0010",
+    "input_record": {
+      "account_id": "ACC_4E8D0010",
+      "status": "OK",
+      "score": 0.6,
+      "decision": "MANUAL_REVIEW_REQUIRED",
+      "explanation": "Borderline: 95% of inflow (101787.75 INR) was forwarded within 24 hours. The transaction is part of a tight 7-node rapid chain. Account was active, lacking the full dormancy signature. Requires manual review.",
+      "signals": {
+        "dormancy_days": 21,
+        "pass_through_ratio": 0.95,
+        "chain_nodes": 7,
+        "chain_hops": 6
+      }
+    },
+    "l2_decision": null,
+    "status": "failed",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 3.209169981s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}",
+    "fallback": "MANUAL_REVIEW_REQUIRED"
+  }
+]
