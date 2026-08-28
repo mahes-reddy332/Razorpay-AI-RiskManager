@@ -72,3 +72,43 @@ The NetworkX metadata graph operates in milliseconds using the composite scores 
 
 ### Level 2: Asynchronous LLM Copilot (`src/l2_copilot.py`)
 Instead of a human analyst, our Level 2 script uses `google-genai` and Pydantic to read the `audit_log.json`. It passes the data to Gemini 2.5 Flash using structured outputs, forcing a highly constrained, rule-bound `FRAUD/SAFE` decision along with its reasoning. This achieves the analytical depth of an investigator without breaking the speed of L1.
+
+## 6. Real-Time Scoring API (`api/server.py`)
+
+### Architecture Pattern: Decouple Expensive Computation from the Request Path
+
+The API demonstrates the correct production pattern for real-time fraud scoring:
+
+1. **Precompute Job (`api/precompute.py`):** Runs the full frozen L1 pipeline (Tier 0 + Tier 1) across the entire account population and writes results to a JSON cache file. In production, this would run periodically via a cron job or be triggered by a transaction-ingestion webhook — never synchronously per request.
+
+2. **O(1) Lookup at Request Time:** The FastAPI server loads the precomputed cache into memory at startup. `GET /score/{account_id}` performs a single dictionary lookup and returns the risk score, decision, full signal breakdown, and the actual measured latency (typically < 1ms).
+
+3. **Incremental Tier 0 Updates:** `POST /transactions` accepts a new transaction and updates only the cheap Tier 0 signals (velocity, immediate-counterparty MCC) incrementally. The response includes `"topology_reverification": "queued"` to honestly show that the expensive graph topology trace is NOT re-run synchronously — it would be queued for the next batch precompute.
+
+### Honest Boundary
+
+This prototype runs the cache and API locally against the existing dataset scale (~2,200 accounts). It demonstrates the correct architectural **pattern** at prototype scale — it is not the production infrastructure itself. A real deployment would additionally require:
+
+- **Streaming ingestion** (Apache Kafka / Flink) to ingest transactions in real-time and trigger incremental cache updates.
+- **Distributed graph store** (Neo4j / TigerGraph) to replace the in-memory NetworkX graph for billion-edge scale.
+- **Cache layer** (Redis / DynamoDB) to replace the local JSON file with a distributed, low-latency key-value store.
+
+This prototype proves we understand the decoupled architecture pattern. It does not imply those infrastructure components are no longer needed.
+
+## 7. L2 Model Failover Strategy
+
+The L2 LLM Copilot depends on a third-party inference API (currently Groq). During development, two models were deprecated (`llama3-70b-8192` and `llama-3.3-70b-versatile`), forcing a migration to `openai/gpt-oss-120b`.
+
+### What happens when the API is unavailable?
+
+The system **fails closed**, not open:
+
+1. If the API returns a non-200 status or times out, the account stays in `MANUAL_REVIEW_REQUIRED` status — it is never auto-passed as SAFE.
+2. The exception is logged with the full error payload for ops debugging.
+3. A human analyst must manually review these accounts via the `human_override.py` CLI tool.
+
+This is a deliberate design choice: in financial fraud detection, a false negative (letting a mule through) is far more costly than a delayed review. The system always errs on the side of caution.
+
+### Model-Agnostic Interface
+
+The L2 prompt template uses a standard OpenAI-compatible chat completions API format. Switching to any provider (OpenAI, Anthropic, local vLLM) requires changing only the `GROQ_URL` and `MODEL` constants — zero prompt rewriting.
