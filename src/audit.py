@@ -131,37 +131,65 @@ class FraudRiskAuditor:
                     
             record["signals"]["pass_through_ratio"] = round(pt_ratio, 2)
             
-            if not pass_through:
-                return record
-                
-            # 3. PHASE 4 TRACER MODIFIER
-            score = 0.6
-            if is_dormant: score += 0.4
+            # TIER 0 BASE SCORE
+            base_score = 0.0
+            if pass_through: base_score += 0.6
+            if is_dormant: base_score += 0.4
+            record["score"] = base_score
             
-            hops, node_count, sinks = get_chain_metrics(self.G, node)
-            record["signals"]["chain_nodes"] = node_count
-            record["signals"]["chain_hops"] = hops
+            # --- TIER 1 ADVANCED FEATURE EXTRACTION & SCORING ---
+            from model_v2 import FROZEN_CONFIG
             
-            if node_count > 8:
-                # Legit Fan-in / Fan-out
-                record["score"] = 0.0
-                record["decision"] = "PASS"
-                record["explanation"] = f"Passed: High velocity detected ({pt_ratio*100:.0f}% pass-through), but temporal graph trace reveals a {node_count}-node footprint, indicative of legitimate fan-in/fan-out behavior (e.g., SMB/Salary) rather than a mule topology."
-                return record
+            # 1. Always-on immediate MCC check (Tier 0 integration)
+            is_risky = 0
+            for succ in self.G.successors(node):
+                mcc = self.G.nodes[succ].get('mcc_code', 'NONE')
+                if mcc in ["CRYPTO_EXCHANGE", "GAMBLING", "UNREGISTERED_P2P"]:
+                    is_risky = 1
+                    break
+            
+            final_score = base_score
+            final_score += is_risky * FROZEN_CONFIG['mcc_weight']
+            
+            # 2. Expensive Graph Trace (Tier 1) - only if velocity tripwire fired
+            if base_score > 0:
+                hops, node_count, sinks = get_chain_metrics(self.G, node)
+                record["signals"]["chain_nodes"] = node_count
+                record["signals"]["chain_hops"] = hops
                 
-            # 4. FINAL FLAG
-            record["score"] = score
+                if node_count > 0 and node_count <= FROZEN_CONFIG['node_thresh']:
+                    final_score += FROZEN_CONFIG['top_weight']
+                    
+                # We also check deep sinks in Tier 1
+                for sink in sinks:
+                    mcc = self.G.nodes[sink].get('mcc_code', 'NONE')
+                    if mcc in ["CRYPTO_EXCHANGE", "GAMBLING", "UNREGISTERED_P2P"]:
+                        if is_risky == 0:  # Only add if it wasn't already caught by immediate check
+                            final_score += FROZEN_CONFIG['mcc_weight']
+                            is_risky = 1
+                        break
+            
+            record["score"] = final_score
+            
+            # 4. FINAL FLAG DECISION BANDS
+            B_FLAG = FROZEN_CONFIG['dec_thresh']     # Default: 0.5
+            A_REV  = FROZEN_CONFIG['manual_thresh']  # Default: 0.3
             
             exp = f"{pt_ratio*100:.0f}% of inflow ({trigger_amt} INR) was forwarded within 24 hours. "
-            exp += f"The transaction is part of a tight {node_count}-node rapid chain. "
-            
-            if score >= 1.0:
+            if is_dormant:
+                exp += f"Account was dormant for {dormancy_days} days. "
+            if is_risky:
+                exp += f"Routed to risky terminal MCC. "
+                
+            if final_score >= B_FLAG:
                 record["decision"] = "FLAG_MULE"
-                exp += f"Account was highly anomalous (dormant for {dormancy_days} days prior to this activity)."
-                record["explanation"] = "Flagged: " + exp
-            else:
+                record["explanation"] = "Flagged: " + exp + f"(Composite Score: {final_score:.2f} >= {B_FLAG})"
+            elif final_score >= A_REV:
                 record["decision"] = "MANUAL_REVIEW_REQUIRED"
-                record["explanation"] = "Borderline: " + exp + "Account was active, lacking the full dormancy signature. Requires manual review."
+                record["explanation"] = "Borderline: " + exp + f"(Composite Score: {final_score:.2f}). Requires manual review."
+            else:
+                record["decision"] = "SAFE"
+                record["explanation"] = f"Cleared: Activity did not exceed safety thresholds (Composite Score: {final_score:.2f})."
             
         except ValueError as e:
             record["status"] = "DEGRADED"

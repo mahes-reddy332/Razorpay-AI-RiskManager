@@ -1,0 +1,24 @@
+{
+  "l1_only": {
+    "precision": 0.922,
+    "recall": 0.815,
+    "tp": 119,
+    "fp": 10,
+    "tn": 287,
+    "fn": 27
+  },
+  "combined": {
+    "precision": 0.917,
+    "recall": 0.904,
+    "f1": 0.91,
+    "tp": 132,
+    "fp": 12,
+    "tn": 285,
+    "fn": 14
+  },
+  "extrapolation": {
+    "fpr": 4.04,
+    "per_10k": 404,
+    "per_1m": 40404
+  }
+}

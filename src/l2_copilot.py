@@ -12,7 +12,7 @@ Setup:
     export GEMINI_API_KEY=your_key_here   # free key: https://aistudio.google.com/apikey
 
 Usage:
-    python src/l2_copilot.py --input outputs/audit_log.json --output outputs/l2_decisions.json
+    python l2_copilot.py --input outputs/audit_log.json --output outputs/l2_decisions.json
 """
 
 import argparse
@@ -94,22 +94,14 @@ def main():
     with open(input_path) as f:
         audit_records = json.load(f)
 
-    # ONLY PROCESS ACCOUNTS FLAGGED FOR MANUAL REVIEW
-    review_records = [r for r in audit_records if r.get("decision") == "MANUAL_REVIEW_REQUIRED"]
-
-    # Optional: If using a free-tier key, uncomment the line below to test on a small sample.
-    # review_records = review_records[:5]
-
-    if not review_records:
-        print("No accounts flagged for MANUAL_REVIEW_REQUIRED found in the input file.")
-        sys.exit(0)
-
-    print(f"Found {len(review_records)} accounts requiring L2 manual review. Processing...")
+    # Accept either a single record or a list of records
+    if isinstance(audit_records, dict):
+        audit_records = [audit_records]
 
     client = genai.Client(api_key=api_key)
     results = []
 
-    for record in review_records:
+    for record in audit_records:
         account_id = record.get("account_id", "UNKNOWN")
         outcome = {"account_id": account_id, "input_record": record}
 

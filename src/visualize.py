@@ -66,8 +66,8 @@ def plot_metrics_summary():
     
     data = [
         ["Phase 3 (MVP Baseline)", "54.5%", "85.7%", "0.667", "15"],
-        ["Phase 8 v1 (Invalidated - Tuned on Test Set)", "85.2%", "100%", "0.920", "4"],
-        ["Phase 8 v2 (Final - Honest 60/20/20 Split)", "74.1%", "95.2%", "0.833", "7"]
+        ["v1 (Invalidated - Tuned on Test)", "85.2%", "100%", "0.920", "4"],
+        ["v2 (Final - Honest 60/20/20)", "74.1%", "95.2%", "0.833", "7"]
     ]
     columns = ["Model", "Precision", "Recall", "F1 Score", "False Positives"]
     

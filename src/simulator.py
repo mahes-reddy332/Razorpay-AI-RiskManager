@@ -33,10 +33,10 @@ class UPISimulator:
         # Background Legit Traffic
         self.NORMAL_TXN_PER_DAY = (0.1, 2.0)       # Average txns per day per user
         
-    def generate_account(self, is_mule=False, behavior="normal", dormant_days=0, shared_device=None):
-        acc_id = f"ACC_{uuid.uuid4().hex[:8].upper()}"
+    def generate_account(self, is_mule=False, behavior="normal", dormant_days=0, shared_device=None, is_adversarial=False):
+        acc_id = f"ACC_{uuid.uuid4().hex[:12].upper()}"
         creation_date = self.start_date - timedelta(days=random.randint(dormant_days, dormant_days + 60))
-        device_id = shared_device if shared_device else f"DEV_{uuid.uuid4().hex[:8].upper()}"
+        device_id = shared_device if shared_device else f"DEV_{uuid.uuid4().hex[:12].upper()}"
         
         mcc_code = "NONE"
         if behavior == "merchant": 
@@ -57,6 +57,7 @@ class UPISimulator:
             "kyc_tier": random.choice(["tier1", "tier2", "tier3"]),
             "mcc_code": mcc_code,
             "is_mule": is_mule,
+            "is_adversarial": is_adversarial,
             "behavior_type": behavior
         })
         return acc_id
@@ -144,6 +145,105 @@ class UPISimulator:
             out_time = start_time + timedelta(minutes=random.randint(*self.MULE_SLOW_DELAY_MINS))
             self.add_transaction(node1, cashout, split_amount * random.uniform(0.9, 1.1), out_time, chain_id, True)
 
+    # --- Adversarial Generators (Round 2 Stress Test) ---
+    def inject_adversarial_slow_evasion(self):
+        """Hops spaced 48-120 hours apart to test multi-window velocity."""
+        num_hops = random.randint(*self.MULE_HOP_RANGE)
+        base_amount = random.uniform(*self.MULE_AMT_RANGE)
+        chain_id = f"CHAIN_ADV_SLOW_{uuid.uuid4().hex[:6].upper()}"
+        current_time = self.random_timestamp() - timedelta(days=6)
+        
+        nodes = [self.generate_account(is_mule=True, behavior="mule_hop", is_adversarial=True) for _ in range(num_hops)]
+        prev_node = f"EXT_VICTIM_{uuid.uuid4().hex[:4].upper()}"
+        current_amount = base_amount
+        
+        for node in nodes:
+            self.add_transaction(prev_node, node, current_amount, current_time, chain_id, True)
+            # 48 to 120 hours delay! (2880 to 7200 minutes)
+            current_time += timedelta(minutes=random.randint(2880, 7200))
+            prev_node = node
+            
+        cashout = self.generate_account(is_mule=True, behavior="mule_cashout", is_adversarial=True)
+        self.add_transaction(prev_node, cashout, current_amount, current_time, chain_id, True)
+
+    def inject_adversarial_amount_camouflaged(self):
+        """Structures transfers into small amounts (₹100-3000) to hide Z-score."""
+        total_amount = random.uniform(*self.MULE_AMT_RANGE)
+        chain_id = f"CHAIN_ADV_CAMO_{uuid.uuid4().hex[:6].upper()}"
+        start_time = self.random_timestamp() - timedelta(days=2)
+        
+        # We need many small transactions, so we use a central aggregator that receives and sends small chunks
+        aggregator = self.generate_account(is_mule=True, behavior="mule_hop", is_adversarial=True)
+        ext_source = f"EXT_VICTIM_{uuid.uuid4().hex[:4].upper()}"
+        
+        # Inflow: chunks of ₹500 to ₹3000
+        current_in_time = start_time
+        remaining = total_amount
+        while remaining > 0:
+            chunk = min(remaining, random.uniform(500, 3000))
+            self.add_transaction(ext_source, aggregator, chunk, current_in_time, chain_id, True)
+            remaining -= chunk
+            current_in_time += timedelta(minutes=random.randint(5, 30))
+            
+        # Outflow: chunks of ₹500 to ₹3000 to cashout
+        cashout = self.generate_account(is_mule=True, behavior="mule_cashout", is_adversarial=True)
+        current_out_time = current_in_time + timedelta(hours=1)
+        remaining = total_amount
+        while remaining > 0:
+            chunk = min(remaining, random.uniform(500, 3000))
+            self.add_transaction(aggregator, cashout, chunk, current_out_time, chain_id, True)
+            remaining -= chunk
+            current_out_time += timedelta(minutes=random.randint(5, 30))
+
+    def inject_adversarial_topology_camouflaged(self):
+        """Wide fan-out (12-18 nodes) to deliberately exceed node_count <= 8 rule."""
+        total_amount = random.uniform(*self.MULE_AMT_RANGE)
+        num_splits = random.randint(12, 18) # Breaks the <= 8 topology rule
+        chain_id = f"CHAIN_ADV_TOPO_{uuid.uuid4().hex[:6].upper()}"
+        ext_source = f"EXT_VICTIM_{uuid.uuid4().hex[:4].upper()}"
+        start_time = self.random_timestamp() - timedelta(days=1)
+        
+        split_nodes = [self.generate_account(is_mule=True, behavior="mule_hop", is_adversarial=True) for _ in range(num_splits)]
+        cashout = self.generate_account(is_mule=True, behavior="mule_cashout", is_adversarial=True)
+        
+        split_amount = total_amount / num_splits
+        
+        for node in split_nodes:
+            jitter_amt = split_amount * random.uniform(0.9, 1.1)
+            jitter_time = start_time + timedelta(minutes=random.randint(0, 30))
+            self.add_transaction(ext_source, node, jitter_amt, jitter_time, chain_id, True)
+            
+            fwd_time = jitter_time + timedelta(minutes=random.randint(*self.MULE_FAST_DELAY_MINS))
+            self.add_transaction(node, cashout, jitter_amt, fwd_time, chain_id, True)
+
+    def inject_adversarial_ultimate_evasion(self):
+        """Round 3: Topology Camouflage AND guaranteed compromised SAFE MCC destination."""
+        total_amount = random.uniform(*self.MULE_AMT_RANGE)
+        num_splits = random.randint(12, 18) 
+        chain_id = f"CHAIN_ADV_ULTIMATE_{uuid.uuid4().hex[:6].upper()}"
+        ext_source = f"EXT_VICTIM_{uuid.uuid4().hex[:4].upper()}"
+        start_time = self.random_timestamp() - timedelta(days=1)
+        
+        split_nodes = [self.generate_account(is_mule=True, behavior="mule_hop", is_adversarial=True) for _ in range(num_splits)]
+        
+        # Generate the cashout, but FORCE a safe MCC to bypass metadata detection
+        # We must generate it first, then get the last appended account to mutate it
+        cashout = self.generate_account(is_mule=True, behavior="mule_cashout", is_adversarial=True)
+        # Find the account we just created and mutate its MCC
+        for acc in reversed(self.accounts):
+            if acc['account_id'] == cashout:
+                acc['mcc_code'] = random.choice(["HOSPITAL", "EDUCATION", "UTILITIES"])
+                break
+        
+        split_amount = total_amount / num_splits
+        
+        for node in split_nodes:
+            jitter_amt = split_amount * random.uniform(0.9, 1.1)
+            jitter_time = start_time + timedelta(minutes=random.randint(0, 30))
+            self.add_transaction(ext_source, node, jitter_amt, jitter_time, chain_id, True)
+            fwd_time = jitter_time + timedelta(minutes=random.randint(*self.MULE_FAST_DELAY_MINS))
+            self.add_transaction(node, cashout, jitter_amt, fwd_time, chain_id, True)
+
     # --- Hard Negative Generators ---
     def inject_salary_disbursement(self):
         num_emps = random.randint(*self.SALARY_EMPLOYEES)
@@ -201,10 +301,10 @@ class UPISimulator:
         self.add_transaction(acc, merchant, spend, start_time + timedelta(minutes=random.randint(30, 180)), chain_id, False)
 
     # --- Full Generation ---
-    def generate_full_dataset(self, num_accounts=5000, mule_prevalence=0.03):
-        target_mules = int(num_accounts * mule_prevalence) # ~150 mules
+    def generate_full_dataset(self, num_accounts=6000, mule_prevalence=0.03):
+        target_mules = int(num_accounts * mule_prevalence) # Baseline mules
         
-        # 1. Generate Mule Chains
+        # 1. Generate Baseline Mule Chains
         mule_accs = 0
         while mule_accs < target_mules:
             choice = random.random()
@@ -213,13 +313,20 @@ class UPISimulator:
             elif choice < 0.8: self.inject_mule_chain_linear(is_slow=False, use_commission=True)
             elif choice < 0.9: self.inject_mule_chain_split_reconverge()
             else: self.inject_mule_chain_structuring()
-            mule_accs = sum(1 for a in self.accounts if a['is_mule'])
+            mule_accs = sum(1 for a in self.accounts if a['is_mule'] and not a['is_adversarial'])
+            
+        # 1.5 Generate Adversarial Mule Chains (Round 2 & 3 Stress Tests)
+        print("Injecting adversarial mules...")
+        for _ in range(15): self.inject_adversarial_slow_evasion()
+        for _ in range(15): self.inject_adversarial_amount_camouflaged()
+        for _ in range(15): self.inject_adversarial_topology_camouflaged()
+        for _ in range(15): self.inject_adversarial_ultimate_evasion() # Round 3
             
         # 2. Generate Hard Negatives
-        for _ in range(30): self.inject_salary_disbursement()
-        for _ in range(30): self.inject_small_business()
-        for _ in range(40): self.inject_dormant_legit_large_purchase()
-        for _ in range(30): self.inject_bill_split()
+        for _ in range(40): self.inject_salary_disbursement()
+        for _ in range(40): self.inject_small_business()
+        for _ in range(50): self.inject_dormant_legit_large_purchase()
+        for _ in range(40): self.inject_bill_split()
         
         # 3. Generate Normal Users (Fill up to num_accounts)
         current_accs = len(self.accounts)
