@@ -192,3 +192,82 @@ changing only the `GROQ_URL` and `MODEL` constants — zero prompt rewriting.
 - [ ] Rebuild dashboard: `cd dashboard; npm run build`
 - [ ] Add the Model Failover section to `docs/architecture.md`
 - [ ] Final commit and push: `git add . ; git commit -m "chore: add tests, chart, failover docs" ; git push origin main`
+
+---
+
+## 4. ChatGPT Architecture Review Fixes (Crucial)
+
+An independent architectural review flagged 5 specific operational weaknesses. These are massive value-adds for a real-world enterprise pitch. 
+
+### Fix 1: Change "AUTO_FREEZE" semantics
+**Why:** AI should not unilaterally freeze funds without natural justice.
+**Action:** 
+- In your pitch script and `architecture.md`, change the terminology from `AUTO_FREEZE` to `RISK_CONTAINMENT_REQUIRED`.
+- In `model_v2.py`, `precompute.py`, and `App.jsx`, rename the `FLAG_MULE` decision to `HIGH_RISK`.
+
+### Fix 2: Remove LLM Final Authority
+**Why:** The LLM should act as an investigator (extracting evidence), not the final adjudicator of fraud.
+**Action:** 
+- In `src/l2_copilot.py`, change the prompt/schema so the LLM outputs `structured_evidence` and a `recommended_action`, rather than a hard final decision. The final decision should be handled by a deterministic Python policy wrapper around the LLM output.
+
+### Fix 3: Cryptographic Audit Logging
+**Why:** A standard JSON file is not an "immutable" audit log because anyone can edit it.
+**Action:** 
+- In `src/human_override.py`, implement SHA-256 hash chaining. Each new override should calculate its hash based on the `previous_hash` + `current_event_data`.
+```python
+import hashlib
+import json
+
+def hash_event(event_data, previous_hash):
+    raw = json.dumps(event_data, sort_keys=True) + previous_hash
+    return hashlib.sha256(raw.encode('utf-8')).hexdigest()
+```
+
+### Fix 4: Correct the FPR Wording
+**Why:** 4% FPR does not guarantee exactly 40,000 freezes unless the population is identical.
+**Action:** 
+- Update `docs/pitch_script.md` to say exactly: *"At the observed 4% false-positive rate, applying this operating point naively to one million comparable accounts would imply approximately 40,000 false alerts. This is a scenario analysis, not a production forecast."*
+
+### Fix 5: Burstiness / Holding Time Feature
+**Why:** "Forwarded within 24 hours" is too loose. Mules forward money in minutes.
+**Action:**
+- In `src/model_v2.py`, add a feature that calculates `median_hold_time` (difference in minutes between incoming transaction and outgoing transaction). Add extra weight to the score if funds are forwarded in `< 30 mins`.
+
+### Final Checklist (ChatGPT Fixes)
+- [ ] Find and replace `FLAG_MULE` -> `HIGH_RISK`
+- [ ] Update Pitch Script FPR wording (Scenario Analysis)
+- [ ] Implement SHA-256 hash chaining in `human_override.py`
+- [ ] Refactor LLM Copilot output schema to "Evidence" instead of "Decision"
+- [ ] Add `median_hold_time` burstiness feature to `model_v2.py`
+
+---
+
+## 5. Gemini Architecture Review Fixes (Enterprise Scale)
+
+A second Principal Engineering review evaluated the system at Razorpay scale (billions of transactions). They identified 4 hardware, scaling, and entity-resolution limits.
+
+### Fix 1: Reframe LLM Value (AHT Reduction)
+**Why:** LLMs are too slow to be a primary decision layer. Their true value is saving human time.
+**Action:** 
+- In your pitch, explicitly state: *"The L2 LLM does not make the final decision. It summarizes the complex graph topology into a natural language dossier, reducing the L3 Human Analyst's Average Handling Time (AHT) from 15 minutes to 3 minutes."*
+
+### Fix 2: Document Graph OOM (Out Of Memory) Limits
+**Why:** NetworkX is an in-memory toy. It will crash on a real banking dataset. 
+**Action:** 
+- Add a line to `architecture.md` stating: *"NetworkX is used strictly for this prototype. At production scale, an in-memory graph will suffer fatal OOM (Out-Of-Memory) crashes. The architecture mandates migrating to a distributed graph database like TigerGraph or AWS Neptune for the nightly batch precomputes."*
+
+### Fix 3: Entity Resolution (Heterogeneous Edges)
+**Why:** Real fraudsters use the same physical phone for 50 different bank accounts. Tracing only money is insufficient.
+**Action:** 
+- In `src/detector.py` and `architecture.md`, document that the production graph must be **Heterogeneous**. It must connect `Account` nodes via `Device_ID`, `IP_Address`, and `IMEI` edges to catch abuse rings that share hardware but don't transact with each other.
+
+### Fix 4: Semantic Prompt Guardrails
+**Why:** Advanced attackers will use Base64 or leetspeak to bypass your regex scanner.
+**Action:** 
+- In `docs/architecture.md`, add a future roadmap item: *"Regex pre-scanning is the V1 defense. V2 requires semantic guardrails (e.g., NeMo Guardrails or an Intent-Classification model) to block Base64, token-smuggling, and semantic bypass attacks."*
+
+### Final Checklist (Gemini Fixes)
+- [ ] Add "AHT Reduction" wording to Pitch Script
+- [ ] Document NetworkX OOM limit and mention TigerGraph/AWS Neptune
+- [ ] Add "Shared Device ID / Heterogeneous Edges" requirement to architecture doc
+- [ ] Add "NeMo Semantic Guardrails" to the security roadmap
