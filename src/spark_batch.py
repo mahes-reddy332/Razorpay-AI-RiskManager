@@ -8,19 +8,42 @@ def main():
     spark = SparkSession.builder \
         .appName("UPI_Batch_Analytics") \
         .config("spark.jars.packages", "graphframes:graphframes:0.8.3-spark3.5-s_2.12") \
+        .config("spark.driver.memory", "8g") \
+        .config("spark.executor.memory", "8g") \
+        .config("spark.memory.offHeap.enabled", "true") \
+        .config("spark.memory.offHeap.size", "2g") \
         .getOrCreate()
         
     spark.sparkContext.setLogLevel("WARN")
 
-    # Load data
-    print("Loading transaction data...")
-    # Using the generated transactions or the IBM dataset slice if you point to it.
-    # We will use data/transactions.csv
-    edges_df = spark.read.csv("data/transactions.csv", header=True, inferSchema=True)
+    # Load data from the real IBM AML dataset
+    print("Loading IBM transaction data...")
+    ibm_path = "/kagglehub/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml/versions/8/HI-Small_Trans.csv"
     
-    # Ensure standard GraphFrame column names: 'src', 'dst'
-    if "source_account" in edges_df.columns and "target_account" in edges_df.columns:
-        edges_df = edges_df.withColumnRenamed("source_account", "src").withColumnRenamed("target_account", "dst")
+    # The IBM CSV has duplicate 'Account' columns (sender and receiver) which breaks Spark's default inferSchema.
+    # We will enforce a custom schema.
+    from pyspark.sql.types import StructType, StructField, StringType, DoubleType, IntegerType
+    schema = StructType([
+        StructField("Timestamp", StringType(), True),
+        StructField("FromBank", StringType(), True),
+        StructField("src", StringType(), True),
+        StructField("ToBank", StringType(), True),
+        StructField("dst", StringType(), True),
+        StructField("AmountReceived", DoubleType(), True),
+        StructField("ReceivingCurrency", StringType(), True),
+        StructField("AmountPaid", DoubleType(), True),
+        StructField("PaymentCurrency", StringType(), True),
+        StructField("PaymentFormat", StringType(), True),
+        StructField("IsLaundering", IntegerType(), True)
+    ])
+    
+    edges_df = spark.read.csv(ibm_path, header=True, schema=schema)
+    
+    # The local Docker container is hard-limited to ~2.4GB of JVM heap memory by WSL2 defaults.
+    # PageRank on 5.07 million edges (which requires heavy shuffle joins) triggers OutOfMemoryError.
+    # To demonstrate the architecture locally, we sample 10% of the graph (approx 500,000 edges).
+    print("Sampling 10% of the 5-million edge graph to fit in local memory limits...")
+    edges_df = edges_df.sample(0.1, seed=42)
     
     # Create vertices DataFrame from unique src and dst
     src_df = edges_df.select(col("src").alias("id"))
