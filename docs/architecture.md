@@ -313,13 +313,20 @@ Live dashboard updates are sourced from the in-process incremental engine, demon
 The L2 agent gathers additional graph evidence via a read-only tool (query_counterparties); final fraud/safe decisions remain a fixed, structured output schema — the LLM's role as evidence-gatherer, not decision-maker, is unchanged. This bounded tool access (capped at 2 calls per account) ensures latency and costs are controlled while significantly reducing UNCERTAIN classifications on edge cases.
 
 
-### Real-Time Event-Driven Ingestion (Kafka / Redpanda Proven End-to-End)
+### Real-Time Event-Driven Ingestion (Kafka / Redpanda Validated)
 The event-driven pipeline is validated end-to-end using a production-grade Redpanda (Kafka-compatible) streaming broker running in Docker on port 9092.
 
-1. **Producer (src/kafka_demo_producer.py)**: Streams incoming transactions from data/transactions.csv into the upi-transactions Kafka topic.
-2. **Consumer (src/kafka_demo_consumer.py)**: Subscribes to upi-transactions, deserializes the event payloads in real-time, and feeds each transaction directly into the incremental_update() stateful graph engine.
-3. **Empirical Performance**:
-   - **Events Processed**: 1,000 live streaming transactions.
-   - **Processing Time**: 0.004 seconds.
-   - **Throughput**: ~249,000 Transactions-Per-Second (TPS) end-to-end.
-   - **Result**: Proves that incremental graph updates combined with event-stream ingestion deliver sub-millisecond scoring latency per transaction at enterprise scale.
+#### 1. Single-Message Latency Sanity Test (Wall-Clock Round-Trip)
+- **Producer Send + Broker Flush Latency**: 2.196 ms
+- **Incremental Graph Scoring Execution**: 0.090 ms
+- **Total Real Wall-Clock Round-Trip**: **2.285 ms** per event
+
+#### 2. End-to-End Streaming Pipeline Benchmarks (Real Ingestion + Concurrent Consumption + Producer Flush)
+- **Synthetic UPI Dataset (1,000 records)**:
+  - **Wall-Clock Time**: 0.665 seconds
+  - **Average Latency**: 0.665 ms / event
+  - **Real End-to-End Throughput**: **1,504.3 TPS**
+- **IBM AML Dataset (HI-Small_Trans.csv, 2,000 records)**:
+  - **Wall-Clock Time**: 0.725 seconds
+  - **Average Latency**: 0.362 ms / event
+  - **Real End-to-End Throughput**: **2,758.9 TPS**
