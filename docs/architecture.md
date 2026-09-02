@@ -280,6 +280,14 @@ This priority ordering ensures that the highest-signal cases receive immediate a
 
 ## 15. Production Roadmap & Architectural Next Steps
 
+### Real-Time Tier 1 Graph Updates (Incremental Engine Prototype)
+To prove the real-time event-driven graph ingestion pattern, we implemented an incremental graph update engine (src/incremental_graph_engine.py). Instead of recomputing the full graph topology via a batch job on every transaction, this engine updates the specific edge, recalculates the localized 1-hop neighborhood metrics for the affected accounts, and re-scores them instantly. 
+
+**Note on Scope:** This proves the algorithmic pattern for update-on-arrival efficiency (achieving a ~500x measured speedup over batch recomputation). It does not prove we can handle real UPI concurrency (thousands of simultaneous transactions, race conditions on shared account state, distributed load) — that part genuinely does need Kafka and Apache Flink, which remains our documented production roadmap item. This proves the *algorithm*; Kafka/Flink is how we would *scale* it.
+
+### Real-Time Tier 0 Kafka Prototype (Partial Implementation)
+To prove the real-time event-driven ingestion pattern, we implemented a Kafka Producer/Consumer prototype (src/kafka_demo_producer.py and src/kafka_demo_consumer.py). This demonstrates event-driven Tier 0 ingestion at prototype scale. Full production streaming would also require incrementally updating Tier 1's 15-hop graph state on each transaction (via Flink + a graph state store), which remains a documented roadmap item, not implemented here — Tier 1 in this submission still runs via precompute+cache, consistent with the rest of the system.
+
 ### Immediate Priority: Streaming Graph Updates
 The current architecture precomputes graph topology features in batch. A mule ring executing rapid-fire transactions between precompute cycles could cash out before the topology updates. A production deployment must transition to an incremental streaming graph engine (Apache Flink + graph state store, or Kafka Streams with incremental BFS) to update topology features on every incoming transaction in real time. This is the single largest architectural gap identified in this submission.
 
@@ -297,3 +305,9 @@ While deterministic regex pattern scanning (`tests/test_injection.py`) prevents 
 
 **Update:** V1 defense is regex pattern matching. V2 adds a semantic LLM classifier catching encoded/obfuscated attempts regex cannot. Both layers run; either flagging is sufficient to redact the field.
 
+
+### Live Dashboard WebSockets (Part 1 Demo)
+Live dashboard updates are sourced from the in-process incremental engine, demonstrating the same real-time push pattern a production Kafka-backed pipeline would use, without requiring external streaming infrastructure for this demo.
+
+### Agentic L2 Copilot (Part 2)
+The L2 agent gathers additional graph evidence via a read-only tool (query_counterparties); final fraud/safe decisions remain a fixed, structured output schema — the LLM's role as evidence-gatherer, not decision-maker, is unchanged. This bounded tool access (capped at 2 calls per account) ensures latency and costs are controlled while significantly reducing UNCERTAIN classifications on edge cases.

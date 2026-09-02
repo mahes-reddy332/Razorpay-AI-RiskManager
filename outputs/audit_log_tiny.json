@@ -1,0 +1,67 @@
+[
+  {
+    "account_id": "ACC_50899A6EFC11",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 65 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 65,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_A3AEF0DB9535",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 67 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 67,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_4328361891FC",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 63 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 63,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_19C2781CAEE2",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 64 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 64,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_F1D3C1175283",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 59 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 59,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  }
+]

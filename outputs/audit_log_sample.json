@@ -1,0 +1,592 @@
+[
+  {
+    "account_id": "ACC_50899A6EFC11",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 65 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 65,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_A3AEF0DB9535",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 67 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 67,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_4328361891FC",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 63 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 63,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_19C2781CAEE2",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 64 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 64,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_F1D3C1175283",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 59 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 59,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_F9617F0DFF84",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (38292.29 INR) was forwarded within 24 hours. Account was dormant for 53 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 53,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_93CEE97F9A33",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_E1191AB84D70",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (100447.15 INR) was forwarded within 24 hours. Account was dormant for 31 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 31,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_9C124D7D3DA6",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (100447.15 INR) was forwarded within 24 hours. Account was dormant for 59 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 59,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_8E68291754FA",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (100447.15 INR) was forwarded within 24 hours. Account was dormant for 43 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 43,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_97E5AC66C560",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (100447.15 INR) was forwarded within 24 hours. Account was dormant for 62 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 62,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_67D3B2AD732F",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_901A1F0C096B",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (42939.48 INR) was forwarded within 24 hours. Account was dormant for 78 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 78,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_C253F20A0720",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (42939.48 INR) was forwarded within 24 hours. Account was dormant for 116 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 116,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_81BAA1B84837",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (42939.48 INR) was forwarded within 24 hours. Account was dormant for 115 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 115,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_4CF243F2A7CD",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (42939.48 INR) was forwarded within 24 hours. Account was dormant for 105 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 105,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_17623C1C0E59",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (42939.48 INR) was forwarded within 24 hours. Account was dormant for 85 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 85,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_A399A3522194",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_DC785EC857E8",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 99% of inflow (156769.87 INR) was forwarded within 24 hours. Account was dormant for 66 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 66,
+      "pass_through_ratio": 0.99,
+      "chain_nodes": 4,
+      "chain_hops": 2
+    }
+  },
+  {
+    "account_id": "ACC_508B1BA82BD8",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_5CA3849E54E3",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_62A8EB91E4E9",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 93% of inflow (59308.95 INR) was forwarded within 24 hours. Account was dormant for 52 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 52,
+      "pass_through_ratio": 0.93,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_E8B33482AC40",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 93% of inflow (54868.74 INR) was forwarded within 24 hours. Account was dormant for 44 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 44,
+      "pass_through_ratio": 0.93,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_29694ECD82B5",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 93% of inflow (51180.38 INR) was forwarded within 24 hours. Account was dormant for 80 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 80,
+      "pass_through_ratio": 0.93,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_7DEBA0B83836",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 92% of inflow (47467.81 INR) was forwarded within 24 hours. Account was dormant for 32 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 32,
+      "pass_through_ratio": 0.92,
+      "chain_nodes": 6,
+      "chain_hops": 5
+    }
+  },
+  {
+    "account_id": "ACC_CD77B867F290",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_A6BBCD213838",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 97% of inflow (57740.13 INR) was forwarded within 24 hours. Account was dormant for 34 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 34,
+      "pass_through_ratio": 0.97,
+      "chain_nodes": 4,
+      "chain_hops": 3
+    }
+  },
+  {
+    "account_id": "ACC_526650C7A6B2",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 96% of inflow (50929.82 INR) was forwarded within 24 hours. Account was dormant for 53 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 53,
+      "pass_through_ratio": 0.96,
+      "chain_nodes": 4,
+      "chain_hops": 3
+    }
+  },
+  {
+    "account_id": "ACC_33448A1292C4",
+    "status": "OK",
+    "score": 0.4,
+    "decision": "SAFE",
+    "explanation": "Cleared: Activity did not exceed safety thresholds (Composite Score: 0.40).",
+    "signals": {
+      "dormancy_days": 62,
+      "pass_through_ratio": 0.0,
+      "chain_nodes": 5,
+      "chain_hops": 3
+    }
+  },
+  {
+    "account_id": "ACC_61C904A39E09",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_C8EE66C61288",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 95% of inflow (58796.19 INR) was forwarded within 24 hours. Account was dormant for 121 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 121,
+      "pass_through_ratio": 0.95,
+      "chain_nodes": 4,
+      "chain_hops": 2
+    }
+  },
+  {
+    "account_id": "ACC_D1DED364614A",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_0CADC8BBB22E",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_902A5ACBC142",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (65292.24 INR) was forwarded within 24 hours. Account was dormant for 91 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 91,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_3E626B86A57B",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (65292.24 INR) was forwarded within 24 hours. Account was dormant for 87 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 87,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_03900B9EEFBC",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (65292.24 INR) was forwarded within 24 hours. Account was dormant for 105 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 105,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_297911E4255A",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (65292.24 INR) was forwarded within 24 hours. Account was dormant for 113 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 113,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_5D733C9F2999",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (65292.24 INR) was forwarded within 24 hours. Account was dormant for 118 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 118,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 7,
+      "chain_hops": 6
+    }
+  },
+  {
+    "account_id": "ACC_81F7B234DDE9",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_EC2343E905D9",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (188105.9 INR) was forwarded within 24 hours. Account was dormant for 86 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 86,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_6319F54F21D0",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (188105.9 INR) was forwarded within 24 hours. Account was dormant for 66 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 66,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_C3F9178CCC10",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (188105.9 INR) was forwarded within 24 hours. Account was dormant for 99 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 99,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_4A41E8065731",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (188105.9 INR) was forwarded within 24 hours. Account was dormant for 104 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 104,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_639C243C28FE",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (188105.9 INR) was forwarded within 24 hours. Account was dormant for 94 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 94,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_9413969FD11A",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 100% of inflow (188105.9 INR) was forwarded within 24 hours. Account was dormant for 89 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 89,
+      "pass_through_ratio": 1.0,
+      "chain_nodes": 8,
+      "chain_hops": 7
+    }
+  },
+  {
+    "account_id": "ACC_C49D1EF3D37B",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  },
+  {
+    "account_id": "ACC_77F3B4156583",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 93% of inflow (86779.22 INR) was forwarded within 24 hours. Account was dormant for 88 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 88,
+      "pass_through_ratio": 0.93,
+      "chain_nodes": 4,
+      "chain_hops": 3
+    }
+  },
+  {
+    "account_id": "ACC_0F74D70C4C3F",
+    "status": "OK",
+    "score": 1.0,
+    "decision": "FLAG_MULE",
+    "explanation": "Flagged: 92% of inflow (87195.98 INR) was forwarded within 24 hours. Account was dormant for 102 days. (Composite Score: 1.00 >= 1.0)",
+    "signals": {
+      "dormancy_days": 102,
+      "pass_through_ratio": 0.92,
+      "chain_nodes": 4,
+      "chain_hops": 3
+    }
+  },
+  {
+    "account_id": "ACC_E5DE4478C087",
+    "status": "OK",
+    "score": 0.4,
+    "decision": "SAFE",
+    "explanation": "Cleared: Activity did not exceed safety thresholds (Composite Score: 0.40).",
+    "signals": {
+      "dormancy_days": 74,
+      "pass_through_ratio": 0.0,
+      "chain_nodes": 5,
+      "chain_hops": 3
+    }
+  },
+  {
+    "account_id": "ACC_5779F0051F58",
+    "status": "OK",
+    "score": 0.0,
+    "decision": "PASS",
+    "explanation": "Normal transaction activity.",
+    "signals": {}
+  }
+]

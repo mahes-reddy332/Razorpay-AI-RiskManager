@@ -323,6 +323,18 @@ function App() {
   }
 
   return (
+    
+      {/* Live Alerts Notification Toast */}
+      <div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1000, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        {liveAlerts.map((alert, idx) => (
+          <div key={idx} style={{ background: '#ff4d4f', color: 'white', padding: '15px 20px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', animation: 'slideIn 0.3s ease-out' }}>
+            <div style={{ fontWeight: 'bold', marginBottom: '5px' }}>🚨 LIVE ALERT: {alert.decision}</div>
+            <div style={{ fontSize: '14px' }}>Account: {alert.account_id}</div>
+            <div style={{ fontSize: '12px', opacity: 0.8, marginTop: '5px' }}>{new Date(alert.timestamp).toLocaleTimeString()}</div>
+          </div>
+        ))}
+      </div>
+
     <div className="min-h-screen bg-slate-100 font-sans">
       {renderNav()}
       <main className="py-6">
