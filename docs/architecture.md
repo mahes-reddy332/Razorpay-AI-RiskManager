@@ -330,3 +330,7 @@ The event-driven pipeline is validated end-to-end using a production-grade Redpa
   - **Wall-Clock Time**: 0.725 seconds
   - **Average Latency**: 0.362 ms / event
   - **Real End-to-End Throughput**: **2,758.9 TPS**
+
+
+### Nightly Batch Processing Architecture (Apache Spark Roadmap)
+Spark batch analytics scoped as future roadmap; Kafka streaming and the incremental engine were successfully demonstrated within the available time. In the target enterprise architecture, a nightly PySpark + GraphFrames batch job performs offline PageRank and global graph recomputes without blocking real-time L1/L2 transaction scoring.
