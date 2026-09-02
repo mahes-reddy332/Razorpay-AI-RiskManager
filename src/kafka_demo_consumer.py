@@ -1,62 +1,77 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath('.'))
+
 import json
-from datetime import datetime
-from kafka import KafkaConsumer
+import time
+import networkx as nx
+from confluent_kafka import Consumer, KafkaError
+from src.incremental_graph_engine import incremental_update
 
-# Mocking the Tier 0 State Store (in production, this is Redis or Flink State)
-account_state_store = {}
+def main():
+    print("Starting Kafka Consumer (confluent_kafka)...")
+    conf = {
+        'bootstrap.servers': 'localhost:9092',
+        'group.id': 'incremental-scorer-group',
+        'auto.offset.reset': 'earliest'
+    }
 
-# Frozen Tier 0 Thresholds
-TIER_0_VELOCITY_THRESHOLD = 50000
+    consumer = Consumer(conf)
+    consumer.subscribe(['upi-transactions'])
+    
+    # Initialize baseline graph
+    graph = nx.DiGraph()
+    print("Consumer subscribed to 'upi-transactions'. Waiting for incoming Kafka messages...")
+    
+    count = 0
+    start_time = None
+    last_msg_time = time.time()
+    
+    try:
+        while True:
+            msg = consumer.poll(timeout=1.0)
+            if msg is None:
+                if count > 0 and (time.time() - last_msg_time > 3):
+                    print(f"\nStream paused. Total transactions processed via Kafka: {count}")
+                    break
+                continue
+                
+            if msg.error():
+                if msg.error().code() == KafkaError._PARTITION_EOF:
+                    continue
+                else:
+                    print(f"Consumer error: {msg.error()}")
+                    break
+                    
+            if count == 0:
+                start_time = time.time()
+                
+            last_msg_time = time.time()
+            txn = json.loads(msg.value().decode('utf-8'))
+            
+            sender = txn.get('sender_account', 'ACC_DEFAULT_SENDER')
+            receiver = txn.get('receiver_account', 'ACC_DEFAULT_RECV')
+            amount = float(txn.get('amount', 100))
+            
+            # CALL THE EXISTING INCREMENTAL GRAPH ENGINE
+            incremental_update(graph, sender, receiver, amount)
+            count += 1
+            
+            if count % 200 == 0:
+                elapsed = time.time() - start_time
+                tps = count / elapsed if elapsed > 0 else 0
+                print(f"Consumed & Incremental Scored {count} transactions | Velocity: {tps:.1f} TPS")
+                
+    except KeyboardInterrupt:
+        pass
+    finally:
+        consumer.close()
+        if start_time and count > 0:
+            total_time = last_msg_time - start_time
+            print(f"\n=== REAL KAFKA STREAMING BENCHMARK ===")
+            print(f"Total Events Consumed from Redpanda: {count}")
+            print(f"Total Execution Time: {total_time:.3f} seconds")
+            print(f"End-to-End Event Ingestion Velocity: {(count/total_time):.1f} TPS")
 
-def process_transaction(txn):
-    sender = txn['sender']
-    amount = float(txn['amount'])
-    
-    # Initialize state if brand new
-    if sender not in account_state_store:
-        account_state_store[sender] = {
-            "total_sent_24h": 0.0,
-            "txn_count": 0,
-            "flagged": False
-        }
-        
-    state = account_state_store[sender]
-    
-    # 1. Incrementally update Tier 0 aggregates
-    state["total_sent_24h"] += amount
-    state["txn_count"] += 1
-    
-    current_velocity = state["total_sent_24h"]
-    
-    # 2. Re-score against the frozen Tier 0 gate
-    if current_velocity > TIER_0_VELOCITY_THRESHOLD and not state["flagged"]:
-        state["flagged"] = True
-        return True, current_velocity
-        
-    return False, current_velocity
-
-def run_consumer():
-    consumer = KafkaConsumer(
-        'upi-transactions',
-        bootstrap_servers=['localhost:9092'],
-        auto_offset_reset='latest',
-        value_deserializer=lambda m: json.loads(m.decode('utf-8'))
-    )
-    
-    print("=== CONSUMER: LISTENING FOR TIER 0 EVENTS ===")
-    
-    for message in consumer:
-        txn = message.value
-        arrival_time = datetime.utcnow().strftime('%H:%M:%S.%f')[:-3]
-        
-        flagged, velocity = process_transaction(txn)
-        
-        print(f"[{arrival_time}] CONSUMER: Received TXN {txn['txn_id']} | Total Sender Velocity: {velocity}")
-        
-        if flagged:
-            # 3. Log promotion territory decision at ingestion time
-            print(f"  --> [{arrival_time}] [ALERT] Account {txn['sender']} crossed Tier 0 velocity gate ({velocity} > {TIER_0_VELOCITY_THRESHOLD}).")
-            print(f"  --> [{arrival_time}] [ACTION] Routing to RISK_CONTAINMENT_REQUIRED / L2 Review instantly!")
-
-if __name__ == "__main__":
-    run_consumer()
+if __name__ == '__main__':
+    main()

@@ -1,37 +1,42 @@
-import json
 import time
-from datetime import datetime
-from kafka import KafkaProducer
+import json
+import sys
+import pandas as pd
+from confluent_kafka import Producer
 
-def get_producer():
-    return KafkaProducer(
-        bootstrap_servers=['localhost:9092'],
-        value_serializer=lambda v: json.dumps(v).encode('utf-8')
-    )
+def delivery_report(err, msg):
+    if err is not None:
+        print(f"Message delivery failed: {err}")
 
-def run_demo():
-    producer = get_producer()
-    topic = 'upi-transactions'
+def main():
+    print("Starting Kafka Producer (confluent_kafka)...")
+    conf = {'bootstrap.servers': 'localhost:9092'}
     
-    print("=== STARTING TIER 0 EVENT-DRIVEN INGESTION DEMO ===")
+    try:
+        producer = Producer(conf)
+    except Exception as e:
+        print(f"Failed to create producer: {e}")
+        sys.exit(1)
+
+    print("Loading data/transactions.csv...")
+    df = pd.read_csv('data/transactions.csv')
+    subset = df.head(1000)
     
-    # Sequence of transactions for the same account
-    transactions = [
-        {"txn_id": "T1", "sender": "ACC_DEMO_99", "receiver": "ACC_LEGIT_1", "amount": 500, "format": "UPI", "timestamp": datetime.utcnow().isoformat()},
-        {"txn_id": "T2", "sender": "ACC_DEMO_99", "receiver": "ACC_LEGIT_2", "amount": 1200, "format": "UPI", "timestamp": datetime.utcnow().isoformat()},
-        {"txn_id": "T3", "sender": "ACC_DEMO_99", "receiver": "ACC_LEGIT_3", "amount": 800, "format": "UPI", "timestamp": datetime.utcnow().isoformat()},
-        # The spike that pushes it over the threshold (e.g. > 50,000 velocity or fast succession)
-        {"txn_id": "T4", "sender": "ACC_DEMO_99", "receiver": "ACC_SHADY_X", "amount": 95000, "format": "UPI", "timestamp": datetime.utcnow().isoformat()},
-    ]
+    print(f"Publishing {len(subset)} transactions to 'upi-transactions' topic...")
+    start_time = time.time()
     
-    for txn in transactions:
-        print(f"[{datetime.utcnow().strftime('%H:%M:%S.%f')[:-3]}] PRODUCER: Sending TXN {txn['txn_id']} | Amount: {txn['amount']} | Sender: {txn['sender']}")
-        producer.send(topic, txn)
-        producer.flush()
-        # Sleep to simulate real timing, not an instant batch dump
-        time.sleep(2)
+    for idx, row in subset.iterrows():
+        payload = row.to_dict()
+        producer.produce('upi-transactions', json.dumps(payload).encode('utf-8'), callback=delivery_report)
+        producer.poll(0)
+        time.sleep(0.001) # 1ms delay
         
-    print("=== PRODUCER DEMO COMPLETE ===")
+        if (idx + 1) % 200 == 0:
+            print(f"Published {idx + 1} transactions...")
+            
+    producer.flush()
+    elapsed = time.time() - start_time
+    print(f"Finished streaming {len(subset)} transactions in {elapsed:.2f} seconds!")
 
-if __name__ == "__main__":
-    run_demo()
+if __name__ == '__main__':
+    main()
