@@ -538,9 +538,11 @@ Running against the IBM Kaggle dataset (10% random slice to fit within 2.4GB loc
 - **Degree Centrality:** Computed across the sampled network in **6.86 seconds**.
 - **PageRank:** Converged (5 iterations) in **47.82 seconds**.
 
-Top suspicious accounts flagged by PageRank in the IBM dataset sample:
-1. `100428660` (Score: 28.61)
-2. `803189520` (Score: 28.26)
-3. `8029BFDC0` (Score: 26.82)
+Top PageRank Hubs (high centrality, mixed ground truth):
+1. `100428660` (Score: 28.61) — **Confirmed Mule** (`Is Laundering = 1` in IBM dataset)
+2. `803189520` (Score: 28.26) — Legitimate Hub (Not labeled as fraud)
+3. `8029BFDC0` (Score: 26.82) — Legitimate Hub (Not labeled as fraud)
+
+*Note: This perfectly corroborates our earlier finding (Section 10) that raw topology/centrality alone cannot reliably separate massive mule rings from legitimate payment aggregators or clearinghouses. PageRank successfully floated the massive fraudster (`100428660`) to the absolute #1 spot globally, but also surfaced legitimate hubs. This demonstrates exactly why Level 3 batch analytics must be corroborated with MCC/metadata or human L2 review.*
 
 By decoupling the real-time scoring (Kafka/LLM) from the global structural scoring (Spark), the architecture achieves both millisecond-level responsiveness for live transactions and deep structural analysis for long-term mule ring detection.
