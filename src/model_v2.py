@@ -407,18 +407,16 @@ FROZEN_CONFIG = {
     'dec_thresh': 1.0,           # Threshold B (HIGH_RISK - Risk containment)
     'manual_thresh': 0.5,        # Threshold A (MANUAL_REVIEW - Routes to L2)
     'betweenness_thresh': 0.000131,
-    # NEW V3 features
-    'retention_weight': 0.4,     # Feature 8: retention_ratio > 0.95 adds weight
-    'retention_thresh': 0.95,    # threshold: retaining < 5% of all received funds
-    'repeat_rate_weight': 0.3,   # Feature 9: counterparty_repeat_rate < 0.10 adds weight
-    'repeat_rate_thresh': 0.10,  # threshold: <10% repeat counterparties = all strangers
-    
-    # NEW V4 features (Our 3 experiments)
-    'roundness_weight': 0.2,     # Feature 10: >60% round amounts
+    # NEW V3/V4 features (Future Work / Odds left in system - Currently unweighted to prevent over-flagging)
+    'retention_weight': 0.0,     # Feature 8: retention_ratio > 0.95 adds weight
+    'retention_thresh': 0.95,    
+    'repeat_rate_weight': 0.0,   # Feature 9: counterparty_repeat_rate < 0.10 adds weight
+    'repeat_rate_thresh': 0.10,  
+    'roundness_weight': 0.0,     # Feature 10: >60% round amounts
     'roundness_thresh': 0.60,    
-    'diversity_weight': 0.3,     # Feature 11: >15 unique senders
+    'diversity_weight': 0.0,     # Feature 11: >15 unique senders
     'diversity_thresh': 15,      
-    'nighttime_weight': 0.2,     # Feature 12: >40% night transactions
+    'nighttime_weight': 0.0,     # Feature 12: >40% night transactions
     'nighttime_thresh': 0.40     
 }
 
