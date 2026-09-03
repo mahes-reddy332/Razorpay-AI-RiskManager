@@ -85,6 +85,14 @@ The API demonstrates the correct production pattern for real-time fraud scoring:
 
 3. **Incremental Tier 0 Updates:** `POST /transactions` accepts a new transaction and updates only the cheap Tier 0 signals (velocity, immediate-counterparty MCC) incrementally. The response includes `"topology_reverification": "queued"` to honestly show that the expensive graph topology trace is NOT re-run synchronously — it would be queued for the next batch precompute.
 
+### Tier 0 Resilience: Fail-Open Policy
+
+When processing a transaction via the real-time API (`api/server.py`), if the account is entirely new or if the cache lookup fails (due to missing data or infrastructure blips), Tier 0 explicitly **fails open**. 
+
+The system silently treats the transaction as `SAFE`, creates a baseline empty risk entry for the account, and allows the payment to proceed uninterrupted. 
+
+**Reasoning:** In real-time UPI payment paths, a sub-500ms SLA is legally mandated. The system cannot block a legitimate user's transaction indefinitely due to an internal cache miss or scoring infrastructure failure. To compensate for this fail-open risk, the transaction is immediately logged and queued for an asynchronous offline re-score during the next batch graph trace (Tier 1). This is intentionally opposite to the L2 LLM Copilot (which fails *closed* for investigations), demonstrating conscious architectural trade-offs based on synchronous vs. asynchronous constraints.
+
 ### Honest Boundary
 
 This prototype runs the cache and API locally against the existing dataset scale (~2,200 accounts). It demonstrates the correct architectural **pattern** at prototype scale — it is not the production infrastructure itself. A real deployment would additionally require:

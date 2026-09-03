@@ -33,7 +33,7 @@ def precompute():
     for i, acc in enumerate(df.index):
         score = float(scores[i])
         if score >= FROZEN_CONFIG['dec_thresh']:
-            decision = "FLAG_MULE"
+            decision = "HIGH_RISK"
         elif score >= FROZEN_CONFIG['manual_thresh']:
             decision = "MANUAL_REVIEW"
         else:
@@ -60,13 +60,13 @@ def precompute():
     with open(CACHE_PATH, 'w') as f:
         json.dump(cache, f, indent=2)
 
-    flagged = sum(1 for v in cache.values() if v['decision'] == 'FLAG_MULE')
+    flagged = sum(1 for v in cache.values() if v['decision'] == 'HIGH_RISK')
     review = sum(1 for v in cache.values() if v['decision'] == 'MANUAL_REVIEW')
     safe = sum(1 for v in cache.values() if v['decision'] == 'SAFE')
 
-    print(f"\nCache written to {CACHE_PATH}")
-    print(f"  Total accounts: {len(cache)}")
-    print(f"  FLAG_MULE:      {flagged}")
+    print("\nPrecomputation Complete!")
+    print(f"Total accounts cached: {len(cache)}")
+    print(f"  HIGH_RISK:      {flagged}")
     print(f"  MANUAL_REVIEW:  {review}")
     print(f"  SAFE:           {safe}")
     print("Done.")

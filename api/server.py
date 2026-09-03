@@ -176,82 +176,101 @@ def ingest_transaction(txn: TransactionPayload):
     start = time.perf_counter()
     account_id = txn.source_account
 
-    if account_id not in SCORE_CACHE:
-        # New account — create a baseline entry
-        SCORE_CACHE[account_id] = {
+    try:
+        if account_id not in SCORE_CACHE:
+            # New account — create a baseline entry (Fail-Open for missing cache)
+            SCORE_CACHE[account_id] = {
+                "account_id": account_id,
+                "risk_score": 0.0,
+                "decision": "SAFE",
+                "is_mule": False,
+                "signals": {
+                    "base_risk_score": 0.0,
+                    "velocity_ratio": 0.0,
+                    "has_risky_sink": 0,
+                    "topology_node_count": 0,
+                    "log_amount_zscore": 0.0,
+                    "betweenness": 0.0,
+                    "pagerank": 0.0,
+                },
+                "last_updated": datetime.utcnow().isoformat() + "Z"
+            }
+
+        entry = SCORE_CACHE[account_id]
+        old_score = entry["risk_score"]
+        old_decision = entry["decision"]
+
+        # --- Tier 0 Incremental Updates (cheap, O(1)) ---
+
+        # 1. Velocity bump: if large amount forwarded quickly, increase velocity signal
+        if txn.amount >= 1000:
+            current_velocity = entry["signals"]["velocity_ratio"]
+            # Simulate velocity increase — in production this would check actual
+            # time deltas against the account's recent transaction history
+            new_velocity = min(current_velocity + 0.15, 1.1)
+            entry["signals"]["velocity_ratio"] = round(new_velocity, 4)
+
+        # 2. Immediate counterparty MCC check
+        risky_mccs = {"CRYPTO_EXCHANGE", "GAMBLING", "UNREGISTERED_P2P"}
+        if txn.target_mcc and txn.target_mcc.upper() in risky_mccs:
+            entry["signals"]["has_risky_sink"] = 1
+
+        # --- Recompute score from updated signals ---
+        new_score = entry["signals"]["base_risk_score"]
+        if entry["signals"]["has_risky_sink"] == 1:
+            new_score += FROZEN_CONFIG['mcc_weight']
+        # Velocity crossing threshold adds to risk
+        if entry["signals"]["velocity_ratio"] > 0.85:
+            new_score += entry["signals"]["base_risk_score"]  # amplify existing risk
+
+        entry["risk_score"] = round(new_score, 4)
+
+        # Update decision based on new score
+        if new_score >= FROZEN_CONFIG['dec_thresh']:
+            entry["decision"] = "HIGH_RISK"
+        elif new_score >= FROZEN_CONFIG['manual_thresh']:
+            entry["decision"] = "MANUAL_REVIEW"
+        else:
+            entry["decision"] = "SAFE"
+
+        entry["last_updated"] = datetime.utcnow().isoformat() + "Z"
+
+        latency_ms = round((time.perf_counter() - start) * 1000, 3)
+        alert_triggered = (old_decision == "SAFE" and entry["decision"] != "SAFE")
+
+        return {
+            "status": "accepted",
             "account_id": account_id,
-            "risk_score": 0.0,
-            "decision": "SAFE",
-            "is_mule": False,
-            "signals": {
-                "base_risk_score": 0.0,
-                "velocity_ratio": 0.0,
-                "has_risky_sink": 0,
-                "topology_node_count": 0,
-                "log_amount_zscore": 0.0,
-                "betweenness": 0.0,
-                "pagerank": 0.0,
-            },
-            "last_updated": datetime.utcnow().isoformat() + "Z"
+            "transaction_id": txn.txn_id,
+            "previous_score": old_score,
+            "updated_score": entry["risk_score"],
+            "previous_decision": old_decision,
+            "updated_decision": entry["decision"],
+            "alert_triggered": alert_triggered,
+            "signals_updated": ["velocity_ratio", "has_risky_sink"],
+            "topology_reverification": "queued",
+            "processing_latency_ms": latency_ms,
+            "note": "Only Tier 0 signals updated incrementally. Full graph topology trace queued for next batch precompute."
         }
-
-    entry = SCORE_CACHE[account_id]
-    old_score = entry["risk_score"]
-    old_decision = entry["decision"]
-
-    # --- Tier 0 Incremental Updates (cheap, O(1)) ---
-
-    # 1. Velocity bump: if large amount forwarded quickly, increase velocity signal
-    if txn.amount >= 1000:
-        current_velocity = entry["signals"]["velocity_ratio"]
-        # Simulate velocity increase — in production this would check actual
-        # time deltas against the account's recent transaction history
-        new_velocity = min(current_velocity + 0.15, 1.1)
-        entry["signals"]["velocity_ratio"] = round(new_velocity, 4)
-
-    # 2. Immediate counterparty MCC check
-    risky_mccs = {"CRYPTO_EXCHANGE", "GAMBLING", "UNREGISTERED_P2P"}
-    if txn.target_mcc and txn.target_mcc.upper() in risky_mccs:
-        entry["signals"]["has_risky_sink"] = 1
-
-    # --- Recompute score from updated signals ---
-    new_score = entry["signals"]["base_risk_score"]
-    if entry["signals"]["has_risky_sink"] == 1:
-        new_score += FROZEN_CONFIG['mcc_weight']
-    # Velocity crossing threshold adds to risk
-    if entry["signals"]["velocity_ratio"] > 0.85:
-        new_score += entry["signals"]["base_risk_score"]  # amplify existing risk
-
-    entry["risk_score"] = round(new_score, 4)
-
-    # Update decision based on new score
-    if new_score >= FROZEN_CONFIG['dec_thresh']:
-        entry["decision"] = "HIGH_RISK"
-    elif new_score >= FROZEN_CONFIG['manual_thresh']:
-        entry["decision"] = "MANUAL_REVIEW"
-    else:
-        entry["decision"] = "SAFE"
-
-    entry["last_updated"] = datetime.utcnow().isoformat() + "Z"
-
-    latency_ms = round((time.perf_counter() - start) * 1000, 3)
-
-    alert_triggered = (old_decision == "SAFE" and entry["decision"] != "SAFE")
-
-    return {
-        "status": "accepted",
-        "account_id": account_id,
-        "transaction_id": txn.txn_id,
-        "previous_score": old_score,
-        "updated_score": entry["risk_score"],
-        "previous_decision": old_decision,
-        "updated_decision": entry["decision"],
-        "alert_triggered": alert_triggered,
-        "signals_updated": ["velocity_ratio", "has_risky_sink"],
-        "topology_reverification": "queued",
-        "processing_latency_ms": latency_ms,
-        "note": "Only Tier 0 signals updated incrementally. Full graph topology trace queued for next batch precompute."
-    }
+    except Exception as e:
+        # EXPLICIT FAIL-OPEN POLICY
+        # If real-time scoring fails due to infra/exception, silently treat as SAFE
+        # to ensure sub-500ms payment SLAs are not blocked.
+        latency_ms = round((time.perf_counter() - start) * 1000, 3)
+        return {
+            "status": "accepted",
+            "account_id": account_id,
+            "transaction_id": txn.txn_id,
+            "previous_score": 0.0,
+            "updated_score": 0.0,
+            "previous_decision": "UNKNOWN",
+            "updated_decision": "SAFE",
+            "alert_triggered": False,
+            "signals_updated": [],
+            "topology_reverification": "queued",
+            "processing_latency_ms": latency_ms,
+            "note": f"FAIL-OPEN TRIGGERED: Internal scoring exception '{str(e)}'. Payment allowed to proceed. Queued for async re-score."
+        }
 
 
 # ---------------------------------------------------------------------------

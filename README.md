@@ -87,23 +87,63 @@ While error rates rarely scale perfectly linearly in practice, large absolute fa
 
 ---
 
-## How to Run the Pipeline
+## Prerequisites & Environment Setup
 
-1. **Install Dependencies:** `pip install -r requirements.txt`
-2. **Generate Data:** `python src/simulator.py`
-3. **Execute V2 Pipeline:** `python src/model_v2.py`
-4. **Generate Audit Logs:** `python src/audit.py`
-5. **Generate Visualizations:** `python src/visualize.py`
-6. **Run Tests:** `pytest tests/test_detector.py`
+This project requires **Python 3.11+**, **Node.js** (for the dashboard), and **Docker** (for Kafka/Redpanda streaming and Apache Spark batch analytics).
 
----
+### 1. Clone & Install
+```bash
+git clone https://github.com/mahes-reddy332/Razorpay-AI-RiskManager.git
+cd Razorpay-AI-RiskManager
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-## Future Scope & Scalability: The Risk Waterfall & Level 2 LLM Copilot
+### 2. Start Redpanda (Kafka Streaming)
+The real-time ingestion pipeline depends on Kafka. We use Redpanda for a lightweight, single-container Kafka alternative.
+```bash
+docker run -d --name redpanda -p 9092:9092 -p 9644:9644 docker.redpanda.com/redpandadata/redpanda:latest redpanda start --smp 1 --memory 1G --reserve-memory 0M --overprovisioned --node-id 0 --kafka-addr PLAINTEXT://0.0.0.0:9092,OUTSIDE://0.0.0.0:9093 --advertise-kafka-addr PLAINTEXT://localhost:9092,OUTSIDE://localhost:9093
+```
 
-To scale this engine, we implemented a hybrid Level 1 / Level 2 Architecture:
+## How to Run the End-to-End Pipeline
 
-**Level 1: The Real-Time Graph Switch (Implemented in `src/model_v2.py`)**
-Executes in milliseconds using NetworkX and a composite weighted score (Velocity, Topology, MCC).
+### Step 1: Data Generation & Precompute
+Generate the synthetic transactional data and run the Tier 1 precompute to build the initial O(1) cache.
+```bash
+python src/simulator.py
+python api/precompute.py
+```
 
-**Level 2: The LLM Copilot (Implemented in `src/l2_copilot.py`)**
-For the ambiguous edge cases or corrupted data logs (as engineered in Phase 5), Level 1 marks the account as `MANUAL_REVIEW_REQUIRED`. Instead of a human wasting time, our standalone `l2_copilot.py` asynchronously reads the structured `audit_log.json`, reasons across unstructured metadata combinations, and generates a strict, Pydantic-validated `FRAUD/SAFE` recommendation using Google's Gemini 2.5 Flash.
+### Step 2: Start the Real-Time API (Tier 0 & Tier 1)
+Start the FastAPI server which serves the `O(1)` risk cache and accepts incremental real-time updates.
+```bash
+uvicorn api.server:app --host 0.0.0.0 --port 8000
+```
+
+### Step 3: Start the L2 AI Copilot (Async Review Queue)
+In a new terminal (with venv activated), start the Level 2 LLM Copilot background worker. This connects via WebSockets to process accounts routed to `MANUAL_REVIEW`.
+```bash
+python api/l2_worker.py
+```
+
+### Step 4: Run the Kafka Streaming Ingestion
+In a new terminal (with venv activated), run the streaming consumer to ingest live transactions from Kafka and score them against the Tier 0/1 API.
+```bash
+python api/stream_processor.py
+```
+*Note: To inject test transactions into Kafka, you can use the built-in generator script if available, or use the Dashboard's synthetic traffic simulator.*
+
+### Step 5: The Command Center Dashboard
+In a new terminal, start the React 19 / Vite dashboard to visualize the streaming alerts, Tier 0 metrics, and L2 LLM audit notes.
+```bash
+cd dashboard
+npm install
+npm run dev
+```
+
+### Offline Step: Run the Tier 3 Spark Batch Job
+To run the massive offline GraphFrames PageRank job on the historical dataset, use the Jupyter PySpark Docker container:
+```bash
+docker run --rm -v "%cd%:/app" -v "%USERPROFILE%\.cache\kagglehub:/kagglehub" -w /app jupyter/pyspark-notebook:latest bash -c "spark-submit --packages graphframes:graphframes:0.8.3-spark3.5-s_2.12 src/spark_batch.py"
+```
