@@ -408,7 +408,7 @@ FROZEN_CONFIG = {
     'manual_thresh': 0.5,        # Threshold A (MANUAL_REVIEW - Routes to L2)
     'betweenness_thresh': 0.000131,
     # NEW V3/V4 features (Future Work / Odds left in system - Currently unweighted to prevent over-flagging)
-    'retention_weight': 0.0,     # Feature 8: retention_ratio > 0.95 adds weight
+    'retention_weight': 0.40,    # Tuned to capture slow ring (0.6 base + 0.4 = 1.0 High Risk)
     'retention_thresh': 0.95,    
     'repeat_rate_weight': 0.0,   # Feature 9: counterparty_repeat_rate < 0.10 adds weight
     'repeat_rate_thresh': 0.10,  
