@@ -1,107 +1,12 @@
 {
-  "ACC_117B95E8E30A": {
-    "account_id": "ACC_117B95E8E30A",
-    "decision": "FLAG_MULE",
+  "ACC_47C4A7E5C472": {
+    "account_id": "ACC_47C4A7E5C472",
+    "decision": "HIGH_RISK",
     "reasoning": "PROMPT_INJECTION_ATTEMPT detected in metadata. Account auto-flagged."
   },
-  "ACC_30F1570CF261": {
-    "account_id": "ACC_30F1570CF261",
-    "decision": "SAFE",
-    "reasoning": "Score 0.40 below risk threshold, no immediate pass\u2011through of funds, and dormancy of 87 days indicate low mule\u2011account risk."
-  },
-  "ACC_DCB325FBCCD2": {
-    "account_id": "ACC_DCB325FBCCD2",
+  "ACC_AA6353FF9339": {
+    "account_id": "ACC_AA6353FF9339",
     "decision": "FRAUD",
-    "reasoning": "Score 0.60 meets the system\u2019s fraud threshold; 100% of inflow was forwarded within 24\u202fhours (pass\u2011through ratio\u202f1.0) and low dormancy (19\u202fdays) are strong mule\u2011account signals."
-  },
-  "ACC_C5AED277F0FF": {
-    "account_id": "ACC_C5AED277F0FF",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.60 with a pass\u2011through ratio of 1.0 and only 10\u202fdays dormancy; rapid full forwarding of funds is indicative of fraudulent mule behavior."
-  },
-  "ACC_2FEFE0C17321": {
-    "account_id": "ACC_2FEFE0C17321",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.60, pass\u2011through ratio 1.0, and 8\u202fdays dormancy; the pattern of immediate full fund forwarding flags this account as a high\u2011risk mule."
-  },
-  "ACC_7E417564AEDC": {
-    "account_id": "ACC_7E417564AEDC",
-    "decision": "SAFE",
-    "reasoning": "Composite score 0.40 is below the risk threshold; low pass\u2011through ratio (0.0) and long dormancy (81 days) indicate normal activity."
-  },
-  "ACC_C3C942216B91": {
-    "account_id": "ACC_C3C942216B91",
-    "decision": "FRAUD",
-    "reasoning": "Composite score 0.60 meets the borderline threshold; 100% of inflow was forwarded within 24\u202fhours, pass\u2011through ratio 1.0, short dormancy (22\u202fdays) and multiple chain nodes suggest mule behavior."
-  },
-  "ACC_172DE4E48AF2": {
-    "account_id": "ACC_172DE4E48AF2",
-    "decision": "FRAUD",
-    "reasoning": "Composite score 0.60; 100% of inflow forwarded within 24\u202fhours, pass\u2011through ratio 1.0, very short dormancy (9\u202fdays) and chain complexity indicate high fraud risk."
-  },
-  "ACC_57BD5EE7B737": {
-    "account_id": "ACC_57BD5EE7B737",
-    "decision": "FRAUD",
-    "reasoning": "Composite score 0.60; full inflow passed through within 24\u202fhours, pass\u2011through ratio 1.0, dormancy 29\u202fdays and multi\u2011node chain point to suspicious mule activity."
-  },
-  "ACC_FAEDF8F27920": {
-    "account_id": "ACC_FAEDF8F27920",
-    "decision": "FRAUD",
-    "reasoning": "Composite score 0.60; 100% of inflow forwarded within 24\u202fhours, pass\u2011through ratio 1.0, dormancy 21\u202fdays and chain hops 2 raise strong fraud indicators."
-  },
-  "ACC_88AA109097A5": {
-    "account_id": "ACC_88AA109097A5",
-    "decision": "SAFE",
-    "reasoning": "Score 0.0, no pass\u2011through activity, dormancy 27 days \u2013 well below risk thresholds."
-  },
-  "ACC_478F1691D3D3": {
-    "account_id": "ACC_478F1691D3D3",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.6, 100% of inflow forwarded within 24\u202fh, short dormancy (9\u202fdays) and multi\u2011node chain (3 nodes, 2 hops) \u2013 classic mule\u2011account pattern."
-  },
-  "ACC_F9AFBEA73EE2": {
-    "account_id": "ACC_F9AFBEA73EE2",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.6, 100% of inflow forwarded within 24\u202fh, dormancy 26\u202fdays but high pass\u2011through ratio and chain depth (3 nodes, 2 hops) indicate suspicious behavior."
-  },
-  "ACC_B1390392FAFE": {
-    "account_id": "ACC_B1390392FAFE",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.6, 100% of inflow forwarded within 24\u202fh, very short dormancy (4\u202fdays) and multi\u2011node chain \u2013 high fraud risk."
-  },
-  "ACC_F5C676AE60C1": {
-    "account_id": "ACC_F5C676AE60C1",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.6, 94% of inflow forwarded within 24\u202fh, dormancy 15\u202fdays, chain nodes present \u2013 meets mule\u2011account risk criteria."
-  },
-  "ACC_16397E7D5079": {
-    "account_id": "ACC_16397E7D5079",
-    "decision": "SAFE",
-    "reasoning": "Score 0.0, no pass\u2011through activity and 30 days dormancy indicate normal behavior."
-  },
-  "ACC_8A1A16974568": {
-    "account_id": "ACC_8A1A16974568",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.6 with 100% pass\u2011through ratio, inflow fully forwarded within 24\u202fhours, short dormancy (6\u202fdays) and multiple chain nodes suggest mule activity."
-  },
-  "ACC_3BF8E38BC778": {
-    "account_id": "ACC_3BF8E38BC778",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.6, 100% pass\u2011through ratio, full forwarding within 24\u202fhours, 16\u202fdays dormancy and chain nodes indicate suspicious rapid turnover."
-  },
-  "ACC_5AA1F17639B1": {
-    "account_id": "ACC_5AA1F17639B1",
-    "decision": "FRAUD",
-    "reasoning": "Score 0.6, 100% pass\u2011through ratio, massive inflow forwarded within 24\u202fhours, very short dormancy (5\u202fdays) and extensive chain nodes (19) point to high fraud risk."
-  },
-  "ACC_B0AE38CD125F": {
-    "account_id": "ACC_B0AE38CD125F",
-    "decision": "SAFE",
-    "reasoning": "Score 0.4, low activity, 0% pass\u2011through ratio, long dormancy (77\u202fdays) and limited chain activity indicate low risk."
-  },
-  "ACC_3F26DF785623": {
-    "account_id": "ACC_3F26DF785623",
-    "decision": "FRAUD",
-    "reasoning": "High pass-through ratio (100% of inflow forwarded within 24 hours) combined with a relatively high composite score (0.60) and a short dormancy period (9 days) indicate classic mule behavior. The account participates in a multi-node chain (3 nodes, 2 hops), further suggesting structured fund movement. These factors collectively warrant a FRAUD decision."
+    "reasoning": "Automated review confirmed severe pass-through behavior. Account receives significant inward volume which is 100% forwarded to high-risk cryptocurrency exchanges (MCC 6051) within 24 hours. The topology shows 7 intermediate hops in the immediate transaction radius, exhibiting textbook Slow Ring evasion and topology camouflage designed to evade basic rulesets. Recommend immediate freeze and SAR filing."
   }
 }

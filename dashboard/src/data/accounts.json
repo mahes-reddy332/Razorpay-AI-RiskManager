@@ -1,18 +1,6 @@
 [
   {
-    "id": "ACC_3EA468883310",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": true,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_066748CBFD0F",
+    "id": "ACC_0C00D8CBB4CB",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -24,7 +12,7 @@
     }
   },
   {
-    "id": "ACC_BB7D691D38C9",
+    "id": "ACC_2A7652A46A87",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -36,10 +24,118 @@
     }
   },
   {
-    "id": "ACC_8D70E7C41F08",
+    "id": "ACC_4EDAFF69C00A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_7DFF176D52CA",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_482CE114A404",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_5061BA249654",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2D333E737BA9",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_EB39B8D24750",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_6A5321A1E923",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_EF30912E660E",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_FD4A64ACFEE0",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B22482C4FC1C",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -48,46 +144,22 @@
     }
   },
   {
-    "id": "ACC_C208BCDDF709",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_7FEFB1A74031",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E46ECC9B309A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_DDEC20BB1E5E",
+    "id": "ACC_049A9695EBE6",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.9526,
+      "risky_mcc": 1,
+      "topology_count": 4
+    }
+  },
+  {
+    "id": "ACC_56E106752B53",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -96,7 +168,7 @@
     }
   },
   {
-    "id": "ACC_EE9E9C44B3B1",
+    "id": "ACC_AFE1D58850D0",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -108,93 +180,9 @@
     }
   },
   {
-    "id": "ACC_FC5A61A8A729",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E89AE61E7E99",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_84F420A07455",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_417C62BB83C8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E2F0AB2BF89A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8B878542C140",
-    "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9548,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_B4FC9DA16D55",
+    "id": "ACC_F957F3BC51FC",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_2965D75D40D2",
-    "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -204,331 +192,31 @@
     }
   },
   {
-    "id": "ACC_09780AFF7662",
+    "id": "ACC_E2F259C1D637",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_CAF62FB19E46",
-    "is_mule": true,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_5481F067DA92",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_68AE05973CB0",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_142B06609532",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_ACEAD88D555C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_1581156E4368",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_474EDBA33527",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_FD2536ADDF91",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_F51A2FC6B8D8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_3CD462BC2EB2",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_75D77473BF34",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_EC2343E905D9",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 8
-    }
-  },
-  {
-    "id": "ACC_773F3159C240",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_EAEF40F4331B",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_2B012927D641",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_0E7465FBE1B1",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B1BAB654051E",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_55ABE608B18B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8645012B1055",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B0CFE57A260E",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_52497CF95F5C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_117B95E8E30A",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_94CD93322757",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C05B6F83354C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_1D0C3FA644C8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C18C9506B32E",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
+      "velocity": 0.9663,
       "risky_mcc": 0,
       "topology_count": 4
     }
   },
   {
-    "id": "ACC_B2E3A65EB6C5",
+    "id": "ACC_FA64176A3D23",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_BACEE1207521",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -540,9 +228,9 @@
     }
   },
   {
-    "id": "ACC_BD0314C62C8C",
+    "id": "ACC_FDDBF1881B17",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -552,79 +240,19 @@
     }
   },
   {
-    "id": "ACC_349F866BDE5A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D1D404AEC981",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B4345362796A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_92317577669B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_7547191D95AC",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_F345CEC61263",
-    "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "id": "ACC_C9E4A97D41CE",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
       "risky_mcc": 0,
-      "topology_count": 47
+      "topology_count": 3
     }
   },
   {
-    "id": "ACC_E905E65C8B96",
+    "id": "ACC_077B8FE5D4EC",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -636,9 +264,9 @@
     }
   },
   {
-    "id": "ACC_C6CA0435A583",
+    "id": "ACC_5DBFFF837AC5",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -648,9 +276,9 @@
     }
   },
   {
-    "id": "ACC_4FB5855CBB65",
+    "id": "ACC_287CCBA88B57",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -660,104 +288,56 @@
     }
   },
   {
-    "id": "ACC_AE0A3EF66F39",
+    "id": "ACC_F90AF50D1F13",
     "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
-      "velocity": 0.0,
+      "velocity": 1.0,
       "risky_mcc": 0,
-      "topology_count": 0
+      "topology_count": 23
     }
   },
   {
-    "id": "ACC_F14FDE6C3D77",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_1900CC96B5D3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_7AD0388B8365",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_07B07A1A76C8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_6CF02C1A348B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AA4E2ABD15BA",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_38081A02C475",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_27266157D648",
+    "id": "ACC_D95A103A1306",
     "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_835137AABB32",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_99A39D1B7268",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D068FA554272",
+    "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
     "human_overridden": false,
@@ -768,8 +348,260 @@
     }
   },
   {
-    "id": "ACC_30F1570CF261",
+    "id": "ACC_4C19418C6DF8",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_80652481BA05",
     "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_1EAC8502DB93",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C9A7444CA87E",
+    "is_mule": true,
+    "score": 1.6,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 5
+    }
+  },
+  {
+    "id": "ACC_CE403BE18CD8",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_FF6AA8CAEABB",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_ECEF9138AB63",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_ACDF9BFF3233",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_B5DD5186AD61",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_26B2971F42AE",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0976D3D9AA1A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_618FDE051C48",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_1CBBBA4888E7",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_EEC52D79E542",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_BB7CF2C19D7E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_197950EA0F78",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_FACB5B1D7B2F",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_484AECB6707A",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8FCC14816548",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B4DCC7CB99A5",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_AB47A684AA2E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_47C4A7E5C472",
+    "is_mule": false,
     "score": 0.6,
     "decision": "MANUAL_REVIEW",
     "human_overridden": false,
@@ -780,10 +612,1150 @@
     }
   },
   {
-    "id": "ACC_56E87504CEF2",
+    "id": "ACC_C2E8673419FD",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_34C3E53B666C",
+    "is_mule": true,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8580C0119A2E",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_3D78A05865E1",
+    "is_mule": true,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_299D7BD0578C",
+    "is_mule": false,
+    "score": 0.6,
+    "decision": "MANUAL_REVIEW",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_CBDF55248258",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_7C7E1A44B987",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_FFBA90427951",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 5
+    }
+  },
+  {
+    "id": "ACC_638112F9DD03",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D70924E44E7A",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_6D60219190C2",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A2B5B35A6D0E",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F628D44ED1A7",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_12546656B6AE",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 7
+    }
+  },
+  {
+    "id": "ACC_05D424EF3BEE",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_E427A4F5B0B5",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_45D189BFFB13",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E1621B3E6F47",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_02C8EDF653ED",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_321F377A51F1",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A739B58097E9",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_8D9D1E501B39",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D8CCD89F9F23",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_12A4ABEA36AD",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F714D203C672",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_C63DADB3F47B",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_04D53C4AB18A",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_51A39D180DF7",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_D168795C40E8",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_E244AFDE50BA",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_D3AA0CC01E50",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_FC740E7CEC5E",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_43ED4B813778",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 5
+    }
+  },
+  {
+    "id": "ACC_04F933DFC33A",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_965C3DE3F845",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_413E187DDD41",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_629FDD54684B",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8F7A5808ACD0",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E5D6A591949C",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B2138FB025C7",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B68569520CF3",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_3D2CADB71413",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A1F426335B08",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0F29223DA768",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_D33BC70E2720",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_4FF0A431FEBD",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_06F4F2BD876D",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8516241D6956",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_09AC7DC85653",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_86DD64F0FE35",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E7A14189FE15",
     "is_mule": true,
     "score": 1.6,
-    "decision": "FLAG_MULE",
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_B3F61BB05CE0",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_EAAFBEDC3801",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E8EFA2C9CC42",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_EE0F34B90961",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0E21D53052E2",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_573972ED67CE",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_099057818776",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B420A00BCBB7",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_BF46A315BB60",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_FADFB56A0BD7",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_372389C5D6B6",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_14496EEE93EA",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B561B8E80411",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_ABF0FCF14DF7",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_981B8306D306",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_65E2065129DA",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_DE9EE0F0272C",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_134E1B14DCA4",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_827172415BB8",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_42E76646E814",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_FDFA83884B7D",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 5
+    }
+  },
+  {
+    "id": "ACC_D46DF1CF5597",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_6ECFFA27766E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_CBEC42BC715C",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_C904A5C7BB10",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_BF0E415BFF43",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_23AF10AA346D",
+    "is_mule": false,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 22
+    }
+  },
+  {
+    "id": "ACC_FC43FC87B1CB",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D4B1603BA41A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_31D7B4AF1CC2",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A5D5FF1ED50C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E9081E645354",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_4251743DE486",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_34B78224B4B4",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_50FBDBB5C602",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_FCDE5485AEFA",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_2B19950E8190",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8B3D46C5956E",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_B75F08E052B0",
+    "is_mule": true,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D2308093810C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_9434625130AE",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C16782E321FC",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_E6DF3D61CB1A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0688669D827F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E4F3B34E46CD",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -792,10 +1764,10 @@
     }
   },
   {
-    "id": "ACC_BCAFE2C27A8D",
+    "id": "ACC_04BE89EEE580",
     "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -804,7 +1776,7 @@
     }
   },
   {
-    "id": "ACC_AD6831C4C780",
+    "id": "ACC_E132B90B5944",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -816,7 +1788,7 @@
     }
   },
   {
-    "id": "ACC_C211CC2FDFD8",
+    "id": "ACC_8302D079BA56",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -828,34 +1800,142 @@
     }
   },
   {
-    "id": "ACC_95C741359854",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E2C7DF0A6E36",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AE01F4C618A5",
+    "id": "ACC_2E3DD818EEB0",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_C275433CCA8C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C7CF9241A572",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B88CE6001304",
+    "is_mule": false,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.9439,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_56E58FEA0221",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_AEEE9D6E151B",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F801676F1079",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2A0E06C44615",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_FB535F86E2E1",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_B57D62F70C2D",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_AAE41CB28986",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_B12F04B35E90",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -864,7 +1944,7 @@
     }
   },
   {
-    "id": "ACC_1941BE40C958",
+    "id": "ACC_1F7F5B3BD714",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -876,9 +1956,9 @@
     }
   },
   {
-    "id": "ACC_65356120B69B",
+    "id": "ACC_07A8FABDA5D3",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -888,46 +1968,10 @@
     }
   },
   {
-    "id": "ACC_983AD268FCC8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_6AF1EA34B9F7",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AB456AC6B05F",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_720086AAE6C7",
+    "id": "ACC_2BCF0782D6D3",
     "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -936,10 +1980,82 @@
     }
   },
   {
-    "id": "ACC_50E0F9AFADEF",
+    "id": "ACC_ABBFA8F91EBA",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F1F7B95C1CD9",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_6AC9286260A4",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0FCD5EC6216B",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F4D7786609D1",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_BA5C67E9E73A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_585EB15DBDBD",
     "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -948,7 +2064,31 @@
     }
   },
   {
-    "id": "ACC_59DD2035F18F",
+    "id": "ACC_6911D03D503D",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B7B50A640580",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_4D68C571344C",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -960,7 +2100,7 @@
     }
   },
   {
-    "id": "ACC_7284A3DA2ED4",
+    "id": "ACC_038F1E68DAB6",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -972,7 +2112,31 @@
     }
   },
   {
-    "id": "ACC_B306DFFCF8BC",
+    "id": "ACC_17513C014B33",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F22A63181817",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_CC258EACA709",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -984,34 +2148,166 @@
     }
   },
   {
-    "id": "ACC_48BBA8AD5A00",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_BA587C4736B0",
+    "id": "ACC_A7E55EEBDC4A",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
-      "velocity": 0.9613,
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_6D57458333B0",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_5123DD2A0AC0",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_F761F1CCB56F",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_0851CB88E505",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_1C99C05CB36A",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_C4070CD3C724",
+    "is_mule": true,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_85B7585239EF",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_F7822EDE6978",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
       "risky_mcc": 1,
-      "topology_count": 8
+      "topology_count": 3
     }
   },
   {
-    "id": "ACC_D38B324EAB72",
+    "id": "ACC_83E59412B0F3",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_848E843330DF",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 7
+    }
+  },
+  {
+    "id": "ACC_264C3CF0B30C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0E325696CC54",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_1A6C9C266AF3",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1020,10 +2316,22 @@
     }
   },
   {
-    "id": "ACC_E2995022BC6E",
+    "id": "ACC_C66B005B0D59",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_28265A9AD692",
     "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1032,7 +2340,19 @@
     }
   },
   {
-    "id": "ACC_9925A8C9DD7F",
+    "id": "ACC_8D2C3258338C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D3AC1E6110EA",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1044,10 +2364,382 @@
     }
   },
   {
-    "id": "ACC_DAEB59DA178E",
+    "id": "ACC_3FAEBED4CC70",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_77F4DEFEEB07",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_CCD884320689",
+    "is_mule": false,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.9621,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_CA85DF9BE0BC",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2B8CBD62BC15",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_0C4100EFAB34",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2E1DB5B3C1F1",
+    "is_mule": false,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.9017,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_459318EF9092",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F26FBF8C402F",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2229C2A3A657",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_04CBEFE0C08A",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_487F04A46550",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_740288EC7B93",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_7D0F3EF49714",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_61E7BA27DA8E",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 7
+    }
+  },
+  {
+    "id": "ACC_F82B32B557D4",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C28465E1CB66",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_44C77A80010C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_02AA662AFD2D",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D4147865C85C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B3E0D67AC60D",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A1589B2B8A62",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_3FB62AC79E20",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_ACEDC061630F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2DD5E060328A",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_75097EB45C55",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2CA59E089392",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_4D0AA9760D81",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 5
+    }
+  },
+  {
+    "id": "ACC_A171CFE0EDA2",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_B0C569B0D4EB",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_80815784EFFC",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_3090F42FC214",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1056,22 +2748,58 @@
     }
   },
   {
-    "id": "ACC_3ADDBCCB229B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
+    "id": "ACC_3884A8853ACC",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 0.0,
-      "risky_mcc": 0,
+      "risky_mcc": 1,
       "topology_count": 0
     }
   },
   {
-    "id": "ACC_F949B146D624",
+    "id": "ACC_C38745465DAA",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_0729D5D9397B",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_9BEFD9D001F6",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_5A5ED3C2A1FD",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1080,7 +2808,19 @@
     }
   },
   {
-    "id": "ACC_5CCC930E6D4C",
+    "id": "ACC_5F1C47FB1572",
+    "is_mule": false,
+    "score": 0.6,
+    "decision": "MANUAL_REVIEW",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_655F5A475698",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1092,10 +2832,22 @@
     }
   },
   {
-    "id": "ACC_E397738745E0",
+    "id": "ACC_B5891276BE60",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B132B26F379C",
     "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1104,7 +2856,7 @@
     }
   },
   {
-    "id": "ACC_25ED6BDEE39B",
+    "id": "ACC_BB4C91BAB7ED",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1116,7 +2868,31 @@
     }
   },
   {
-    "id": "ACC_3C6D8021DE96",
+    "id": "ACC_975C74C32797",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_672446DB6752",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D46A2CF0C4EA",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1128,10 +2904,22 @@
     }
   },
   {
-    "id": "ACC_CBBEC0BF5A68",
+    "id": "ACC_484D62C7446F",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_6ECBC0103545",
     "is_mule": true,
     "score": 1.0,
-    "decision": "FLAG_MULE",
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1140,7 +2928,43 @@
     }
   },
   {
-    "id": "ACC_86CE908BE26E",
+    "id": "ACC_BA3BF189936A",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_C6923246B431",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_24988CB66433",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A97BDE3FCEEC",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1152,21 +2976,645 @@
     }
   },
   {
-    "id": "ACC_58F9BEEBAE5C",
+    "id": "ACC_4DBEB73F6EB3",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_57911444C9EF",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C8AD7F0A28F8",
     "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
       "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_D90805769F27",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_80B32CCAD7F8",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_25519A15C53C",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_38E950BC873B",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E763E81C255E",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_BE6C454CA5E7",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_E953C76E9086",
+    "is_mule": true,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_6A4BC4A5D09E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E7D8E2072E97",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_7C2C15EFDEA5",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_55BD9F9DAAC0",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 7
+    }
+  },
+  {
+    "id": "ACC_97E39DA900C9",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_3A236EFF0FCC",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_BE7D77F5BF65",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_3AD719B25AA5",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_37FD5C34D9A9",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_218DFFD48D38",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_521C26854F29",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_32BFF7E8082D",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_68633A4CFA5B",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_EB287F214599",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_02D8213C864D",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_1179B6E8CDEB",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_CFB793533774",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_46833213E7D0",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_27EA2853F759",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_63EBD7FF223B",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_EBDF3FB56B01",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A5E60518E8CA",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A753FEF0B902",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_9E1155A33DF1",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0D0CCE21AC72",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_854B2BDBC03E",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_7C3F1CCC7D6F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_371ECDA57BF3",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_9C64F0B04A5C",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_187F381ED2F4",
+    "is_mule": false,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.9723,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_787CDD63585B",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_51A9528AA710",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_0CD698D39547",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_EB9656119A44",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_3269AD1F76AC",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A0E9D36C16CC",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_425D77DC80BA",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_6E7641CF5829",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_3D890E66E6AF",
+    "is_mule": false,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.9699,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_FABD11E5C29A",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_48178619D89F",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_586A4B8DA42E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_CDFE485CF40B",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
       "topology_count": 6
     }
   },
   {
-    "id": "ACC_8193C1A7E87A",
+    "id": "ACC_92515136C0FD",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -1176,58 +3624,442 @@
     }
   },
   {
-    "id": "ACC_27AA00683F3A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AA38EA4061FE",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_5512C464756A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_FEB47EFE55C2",
+    "id": "ACC_4AB0B51A64F4",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
-      "risky_mcc": 1,
+      "risky_mcc": 0,
       "topology_count": 3
     }
   },
   {
-    "id": "ACC_35A2C4232E07",
+    "id": "ACC_135CC9EC3A23",
     "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_74EB06A5015E",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_B154331030CA",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_DE43BD96C8C8",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E2117521B2B0",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C450CD402270",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_915871A5097B",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8BA3A71ED2C0",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_78E34AF84C1D",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_3449439CD7F7",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F488561F4CC5",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_6B20FF847FA1",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_9EA9909216F2",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F05AEF274031",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D4C96610B931",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_435903E68847",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_DCF598E05EFA",
+    "is_mule": true,
     "score": 1.0,
-    "decision": "FLAG_MULE",
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_71A7F1D34CCD",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_479E40135791",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_2F3925007809",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_9C2B122AF9D0",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.9772,
+      "risky_mcc": 0,
+      "topology_count": 4
+    }
+  },
+  {
+    "id": "ACC_52258CE2F5D2",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F2CBFED9C6B3",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_9742F291397D",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_EA417FC32563",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_79C0757029F7",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_83E93B58D411",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_394FE0A0E3FC",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_835AE2E0987E",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_87921384C903",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.978,
+      "risky_mcc": 1,
+      "topology_count": 6
+    }
+  },
+  {
+    "id": "ACC_6F80460F45F1",
+    "is_mule": true,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_069C8A14FD3A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B7EF846EFE17",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_BF4F8515D454",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_944AD7070E77",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_4047EB5939AA",
+    "is_mule": false,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1236,55 +4068,43 @@
     }
   },
   {
-    "id": "ACC_AD74403302C9",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "id": "ACC_2DAB7E462B1C",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
     "human_overridden": false,
     "features": {
-      "velocity": 0.9785,
-      "risky_mcc": 1,
-      "topology_count": 8
-    }
-  },
-  {
-    "id": "ACC_A3D7BBFA0C0D",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
+      "velocity": 0.0,
       "risky_mcc": 0,
-      "topology_count": 3
+      "topology_count": 0
     }
   },
   {
-    "id": "ACC_ABB6A9D9F3EC",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "id": "ACC_7F7F9B234AB4",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
     "human_overridden": false,
     "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_DCB325FBCCD2",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
+      "velocity": 0.0,
       "risky_mcc": 0,
-      "topology_count": 3
+      "topology_count": 0
     }
   },
   {
-    "id": "ACC_7E88CBBB0DB4",
+    "id": "ACC_070AFC723E4F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_F6547AC37B80",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1296,7 +4116,7 @@
     }
   },
   {
-    "id": "ACC_780952AC426F",
+    "id": "ACC_2AFA29C9C07C",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1308,7 +4128,7 @@
     }
   },
   {
-    "id": "ACC_F1429F88A0DA",
+    "id": "ACC_4C9EEED5623E",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1320,19 +4140,19 @@
     }
   },
   {
-    "id": "ACC_F6419B351C95",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "id": "ACC_31966C25E319",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
     "human_overridden": false,
     "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
     }
   },
   {
-    "id": "ACC_6FABBEAE2DB3",
+    "id": "ACC_56CE8CEC3421",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1344,7 +4164,67 @@
     }
   },
   {
-    "id": "ACC_40F4DD14FE16",
+    "id": "ACC_28DDCE81AF5F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_707BD38B1EE1",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_EEF494FDF32D",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_08757F9CA6EC",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_3A027AC4F4A3",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_B401D9CAB88F",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1356,33 +4236,9 @@
     }
   },
   {
-    "id": "ACC_01940FC56CE7",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_29ADC69A2988",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_3598416B6BE6",
+    "id": "ACC_9BC0CA6CC9E6",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -1392,139 +4248,19 @@
     }
   },
   {
-    "id": "ACC_34857D67F412",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_72914A32C5A3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D2573D749557",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 6
-    }
-  },
-  {
-    "id": "ACC_0944BBD53AA3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_F68E72E6F480",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_06D69D77DD29",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9528,
-      "risky_mcc": 1,
-      "topology_count": 4
-    }
-  },
-  {
-    "id": "ACC_55FC7822A174",
+    "id": "ACC_56CDD3595BAA",
     "is_mule": false,
     "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9765,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_9881E6F30C80",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_585BDDFC10E0",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_0456414F8031",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_99D01433257B",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
       "risky_mcc": 0,
-      "topology_count": 3
+      "topology_count": 40
     }
   },
   {
-    "id": "ACC_79B94217C2F6",
+    "id": "ACC_8B39E0E79A29",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1536,7 +4272,7 @@
     }
   },
   {
-    "id": "ACC_C1C730BF441F",
+    "id": "ACC_5BC7F9FE78AB",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1548,7 +4284,19 @@
     }
   },
   {
-    "id": "ACC_F1803289FD77",
+    "id": "ACC_046F0353081E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_BB6CD557751E",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1560,7 +4308,7 @@
     }
   },
   {
-    "id": "ACC_9C2B19707408",
+    "id": "ACC_D8BFB70E131B",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1572,7 +4320,19 @@
     }
   },
   {
-    "id": "ACC_DD831469E505",
+    "id": "ACC_911EFAF472FA",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_10F1301AE3EF",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1584,7 +4344,7 @@
     }
   },
   {
-    "id": "ACC_47662507867A",
+    "id": "ACC_BABC26A0A9AC",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -1596,82 +4356,10 @@
     }
   },
   {
-    "id": "ACC_B6B85F9993EA",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_531809E1EAEF",
+    "id": "ACC_E4BA00B245BC",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9833,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_914C36AC8DA9",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_080E4D82D522",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C991EA1D1FD2",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_BC5BE8710A4C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_52B37B62EA49",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1680,46 +4368,10 @@
     }
   },
   {
-    "id": "ACC_BB94BB66FE1C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_77F6CA3467A1",
+    "id": "ACC_7864DDD47AB3",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_D4587220CB36",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4012C806985F",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -1728,2109 +4380,9 @@
     }
   },
   {
-    "id": "ACC_FE6819ADBD9E",
+    "id": "ACC_5F45587A6F37",
     "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_631861FC26F4",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_7828269093BB",
-    "is_mule": true,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_CE1D224C5AD2",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_F536AD498BE8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C5AED277F0FF",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_4741BEBEC73D",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_3518C150899B",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_3A84C1DB81A9",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4A3A8510A860",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_DB580C29DB42",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_EA0F2B82B0E0",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_9E6FEA9938A5",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8891FDFD2F84",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_6C2F9D4F6E52",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8316EEB2BEBA",
-    "is_mule": true,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_298A1541884E",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_6436B055C781",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_23E92B67B3FE",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_814A57015AD5",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_03B49A56377E",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_85FC427F1088",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 5
-    }
-  },
-  {
-    "id": "ACC_61602E153845",
-    "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 44
-    }
-  },
-  {
-    "id": "ACC_7C1DF35580C5",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_DCB6E43FEA45",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_13B2F60D7E9C",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_62CAA222FCDF",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_91CA9C2D747D",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_53221733ECAA",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_EE2399218DF3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D0F555F1380D",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_82C4AFC8F1B8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D4380B933B40",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_978F4B1BB6DF",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D30667C23EDF",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2012D7A92B5B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8A6E87667F4B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_6D5650C8B613",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2C7D813D7819",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_2FC0CD0C0CD6",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_F28A8EB2FAC7",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_984EED6FD863",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_78104BE37EF1",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_CAF5E1662825",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_0E0128C5E97B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_26A2E2EA2515",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A9E751532886",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4D5414A3FF52",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_255737000D53",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_063BF29E27F3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_7A9605AB5460",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C3C9B4FEA01F",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2FEFE0C17321",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_9C2C312E27F2",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_0856CB5C1FB3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_BF6527D446E3",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_14227F804C2C",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_99B0385D9686",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2738E91344AC",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_39ABEC2ED5FD",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_507EE15157D1",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_87FCFCFA2B9E",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9704,
-      "risky_mcc": 1,
-      "topology_count": 7
-    }
-  },
-  {
-    "id": "ACC_83173B033075",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_797EF8CD38C6",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_DB89ECA6598C",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_E51952E7E615",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_F2A22F91A259",
-    "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9447,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_7E417564AEDC",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 1,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_6DE42C6023D5",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2B907CC2FE9D",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_54BE057C6562",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_01D2B4FDD4DA",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_1FF0A935EFE1",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9252,
-      "risky_mcc": 1,
-      "topology_count": 4
-    }
-  },
-  {
-    "id": "ACC_C3C942216B91",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_09EBED4EAA78",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_20832CF67342",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_444100C1BF4C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_77D0D175493B",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_DAFD9119D2E0",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_D9D0873C2153",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_FB227CC6F07C",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_E2A774401C46",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A23498F8242D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E84AB6A60882",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_7AF79ACEDDA1",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_7FFBC97F77A8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D89883AD5A6D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D33E1F2188D6",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_B64E863FF34C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E2047DCC8E2B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B1C54FF0E4E8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_167266D9C6ED",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_1921B8E98D68",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A7F44A96EA90",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E98A92ECA017",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_0ED6A4486EAF",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 4
-    }
-  },
-  {
-    "id": "ACC_FB4C25318C66",
-    "is_mule": true,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B4BE8FF151F6",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_CFEB68C85EDE",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_DA6BB6C7F719",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_930C423EDBE1",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_83CEFA991058",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A1D22087573B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B50FD9A84A46",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_6ABA15AFE265",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4F288E6FA168",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C8976747761D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_6864F3B71C66",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_E072D0045775",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_15D4F60FA965",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_43323E454A48",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9249,
-      "risky_mcc": 1,
-      "topology_count": 8
-    }
-  },
-  {
-    "id": "ACC_172DE4E48AF2",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_AAC27001D998",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_264CD4A1BB14",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_57BD5EE7B737",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_A1BCB9EFB191",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_A84409F34FC9",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C250BF874812",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_27761AD5FCAB",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_01A00B2D45CA",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_4224AEBBBFFB",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_3B7D0A774638",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_3C3682B2806B",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 6
-    }
-  },
-  {
-    "id": "ACC_EF1709D6750E",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_15E50986A9E9",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4A1528A670BB",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_FAEDF8F27920",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_F7355B297DB4",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AE8C3FAED74B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AABA4A2988CB",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_37144F343131",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_88AA109097A5",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 1,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_9AB761619DAC",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_88096FF1B6BB",
-    "is_mule": true,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_5B5DCBD043CE",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_ADB8D25DC840",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_0176D0EEDF1F",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 5
-    }
-  },
-  {
-    "id": "ACC_8F340A40FA04",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_E92C2B2CAAA1",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_774560317612",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8439AF7A244B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D408126494D0",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_80538B85702F",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_6489827DBD86",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4A887DACAF99",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_478F1691D3D3",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_F9AFBEA73EE2",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_3DA5E567A36A",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_DCA68A161504",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_20C228E20B4B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_02A8F8AD8406",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2B0E75C058ED",
-    "is_mule": true,
-    "score": 1.2,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_1C49661ABDA7",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_F35772BA6514",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_CE3AAEF791C5",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_68759AF7F5C4",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_EF79FABDE173",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_9CCD7B6417D5",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_76F61D187E7C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_36FD1698C7FC",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AE194709D5A9",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_579248C13B78",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_34BAED9FD3CE",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_BEB97AC736AE",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_028DF71D1E1A",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_E66B972D4918",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_55827D9B2EF1",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_71AFD48E3740",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A0D01A60EEEB",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_CE825DA0FB70",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_6002D05C00C2",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_69B20E35F7BB",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_5E6E0E370229",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_5C58E7C44884",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_0171DE9E9EA0",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_7942ED1DE146",
-    "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -3840,7 +4392,7 @@
     }
   },
   {
-    "id": "ACC_EC7CD69A7DBF",
+    "id": "ACC_A6887D1D35D2",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -3849,36 +4401,12 @@
       "velocity": 0.0,
       "risky_mcc": 0,
       "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_97D4BF382CF9",
-    "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9403,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_AE8A77E0FDC9",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
     }
   },
   {
-    "id": "ACC_77B1811A7A2E",
+    "id": "ACC_C3F8E15A896C",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -3888,7 +4416,7 @@
     }
   },
   {
-    "id": "ACC_E2FCA172AAD0",
+    "id": "ACC_7241FDABC3FC",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -3900,10 +4428,10 @@
     }
   },
   {
-    "id": "ACC_4CF243F2A7CD",
+    "id": "ACC_9EA96CF4ACD0",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -3912,7 +4440,7 @@
     }
   },
   {
-    "id": "ACC_12FA7D2FF63E",
+    "id": "ACC_19E007CBA2BB",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -3924,19 +4452,103 @@
     }
   },
   {
-    "id": "ACC_8890C633A35C",
+    "id": "ACC_CC5F5744A7E6",
     "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
-      "risky_mcc": 1,
+      "risky_mcc": 0,
       "topology_count": 3
     }
   },
   {
-    "id": "ACC_5700F35C8085",
+    "id": "ACC_594EE84C472A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_30B30527C653",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D9DC37C7BECC",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_73741CB34F09",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8A5EF6F9885E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_521BD91DF642",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A44A1B206636",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A32A6BDAB563",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",
@@ -3948,646 +4560,10 @@
     }
   },
   {
-    "id": "ACC_9EC433608000",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2B7362853CE6",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_64E5C74149B6",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2D899E9E1590",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_41243F03977D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_5D23025A304E",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_F53E92F1EADD",
+    "id": "ACC_AF191FD74446",
     "is_mule": true,
     "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_8FB30AE74A37",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_3A38BEF5A4E5",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A605283A7EDA",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_FF5818D5016D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_59C358D58E23",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C8AEDE474BAC",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_CF7D36BF1510",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_9BBB75ECEC25",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_383FB6DB512F",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E6C4331B95F1",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_A381ACC43E3A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4E4B6D5B9B1C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A7A1CEAC1A32",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_7D7FCAE94FA1",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_3BC4B6B164D1",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_0BFAC3412819",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8FEF30F87A7E",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 8
-    }
-  },
-  {
-    "id": "ACC_6FDB50F178F3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_FC1AB556975B",
-    "is_mule": true,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_241B8D5495ED",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_4F290CDAEE21",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4CB2596C0E16",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_66E4A031A14D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C2FF87C8857D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B0A177003A6A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_BB19C74C8FD0",
-    "is_mule": true,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A6AA7DC071F0",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 5
-    }
-  },
-  {
-    "id": "ACC_EED5607C0398",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_3A6F345B8E87",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_A1167D23A1D3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_77C9E3BDE2D6",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_2C9CC45B2782",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B1390392FAFE",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_66839B90D211",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_0D5CC1F8E1FB",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_4402930D935A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_7EF89AE57618",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C8FE1ABA36BB",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_21577FD249B2",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B127BE2CFB1B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AECDDEA65AA6",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E41484DED17B",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_77AEBB330C37",
-    "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 47
-    }
-  },
-  {
-    "id": "ACC_F5C676AE60C1",
-    "is_mule": false,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9419,
-      "risky_mcc": 0,
-      "topology_count": 2
-    }
-  },
-  {
-    "id": "ACC_5E8C7B20B43C",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_35D6CA679D31",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_16397E7D5079",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 0.0,
@@ -4596,46 +4572,10 @@
     }
   },
   {
-    "id": "ACC_992826C8B954",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_3E83B6467BED",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_EA3CA0897EFF",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_486F7DBA337A",
+    "id": "ACC_5CC53EEB15F4",
     "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -4644,21 +4584,9 @@
     }
   },
   {
-    "id": "ACC_8457B988B724",
+    "id": "ACC_799B6BE54469",
     "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9787,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_F89A5E44F9E5",
-    "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -4668,9 +4596,9 @@
     }
   },
   {
-    "id": "ACC_131537E57BB9",
+    "id": "ACC_BFAB5DD08AE7",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -4680,9 +4608,9 @@
     }
   },
   {
-    "id": "ACC_C42974E658F6",
+    "id": "ACC_A44E801CE85C",
     "is_mule": false,
-    "score": 0.0,
+    "score": 0.4,
     "decision": "SAFE",
     "human_overridden": false,
     "features": {
@@ -4692,598 +4620,46 @@
     }
   },
   {
-    "id": "ACC_17ABFCD044A5",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_7A2CE43934B7",
+    "id": "ACC_895F95FF31E7",
     "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_66AEC6070001",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_52B9813E3C0F",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A3655FD5E15A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D676474BD2C0",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
+    "score": 1.4,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
       "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_D51685EEB280",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B500810AF357",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_725C2EC5C0F3",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_49CCA06DD825",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_791500260EB0",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 5
-    }
-  },
-  {
-    "id": "ACC_6B5D77B5416B",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_934F0F495F11",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_91564E01FAE1",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_5FA7C159E477",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B7513786369D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_47E32C8BDA25",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_1C2833765AF4",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_384BC304F75E",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_FA46EFC3C084",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_983AD53CB2F9",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_901250677DFA",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_E3B399520C2F",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_8A1C74240244",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_FF997455DAF4",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_A2D47945D1CF",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_8A1A16974568",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_3BF8E38BC778",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_93E4788066E8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_B87A8D38ABF9",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_AC5813EB5017",
-    "is_mule": false,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9419,
-      "risky_mcc": 0,
-      "topology_count": 2
-    }
-  },
-  {
-    "id": "ACC_8D12183CAD0D",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_F2AA334EA2C2",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_00224F87C3D9",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_C8EE66C61288",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9469,
-      "risky_mcc": 1,
-      "topology_count": 4
-    }
-  },
-  {
-    "id": "ACC_245BCB219BD8",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_D9B0ED0245CA",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_03669E84A668",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_5AA1F17639B1",
-    "is_mule": false,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 19
-    }
-  },
-  {
-    "id": "ACC_F23BB1885016",
-    "is_mule": true,
-    "score": 1.0,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_015943408349",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.9792,
-      "risky_mcc": 1,
       "topology_count": 7
     }
   },
   {
-    "id": "ACC_B0AE38CD125F",
+    "id": "ACC_C3E0DEBA7710",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_DD0B9A13007A",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A4F904FDE08F",
     "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 1,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_8395195E435A",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_3F26DF785623",
-    "is_mule": true,
-    "score": 0.6,
-    "decision": "MANUAL_REVIEW",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 0,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_9347EF12161E",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_40183D141F1F",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 1.0,
-      "risky_mcc": 1,
-      "topology_count": 3
-    }
-  },
-  {
-    "id": "ACC_37F400AA318E",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_897B75B14F73",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_944CA809AA99",
-    "is_mule": false,
-    "score": 0.0,
-    "decision": "SAFE",
-    "human_overridden": false,
-    "features": {
-      "velocity": 0.0,
-      "risky_mcc": 0,
-      "topology_count": 0
-    }
-  },
-  {
-    "id": "ACC_AED3D832070F",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "score": 2.0,
+    "decision": "HIGH_RISK",
     "human_overridden": false,
     "features": {
       "velocity": 1.0,
@@ -5292,19 +4668,511 @@
     }
   },
   {
-    "id": "ACC_C59710B1CA5A",
-    "is_mule": true,
-    "score": 1.6,
-    "decision": "FLAG_MULE",
+    "id": "ACC_9A6FDE60A15A",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
     "human_overridden": false,
     "features": {
-      "velocity": 0.926,
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_1197B2BE7B0F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C89D10CB1F6E",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_8B5234491AC8",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_705FB4E4A245",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.959,
+      "risky_mcc": 1,
+      "topology_count": 5
+    }
+  },
+  {
+    "id": "ACC_E3CAE2A7F25C",
+    "is_mule": true,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_33C4F14B89EF",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_5DF5CB59D8DD",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_D71B5243A24F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0C05B2FD749F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_9FF4F2217284",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_370740B9ACF5",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_9B8ED759F403",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2C07752D1688",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 5
+    }
+  },
+  {
+    "id": "ACC_4378F51534C0",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_262EF335B487",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_26655412A1E5",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_E877D38A512B",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_0131D7AF7C1A",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_95BE5B01639E",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_E4C4D9B30752",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_7104E09291C3",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_12A42A9F34EE",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_95918689BF17",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_4B07193A30FC",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_47A85538B01F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_69B8F9378249",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A7C293FB61A2",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_FEABBAC2CBEB",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_FAD97692BB44",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_234714D4C104",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_CD84877AB101",
+    "is_mule": true,
+    "score": 1.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 1,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_C47D51B602EC",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_BA0C75B999E4",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_25163015C606",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
       "risky_mcc": 1,
       "topology_count": 8
     }
   },
   {
-    "id": "ACC_ACCE99E23745",
+    "id": "ACC_43F3EF044EBD",
+    "is_mule": true,
+    "score": 1.4,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 0,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_9B33FD911592",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_30755A3988EE",
+    "is_mule": true,
+    "score": 2.0,
+    "decision": "HIGH_RISK",
+    "human_overridden": false,
+    "features": {
+      "velocity": 1.0,
+      "risky_mcc": 1,
+      "topology_count": 3
+    }
+  },
+  {
+    "id": "ACC_BD4607650980",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_A9CF15786A6F",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_5667ACF6982B",
+    "is_mule": false,
+    "score": 0.4,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_2E910EFE96B0",
+    "is_mule": false,
+    "score": 0.0,
+    "decision": "SAFE",
+    "human_overridden": false,
+    "features": {
+      "velocity": 0.0,
+      "risky_mcc": 0,
+      "topology_count": 0
+    }
+  },
+  {
+    "id": "ACC_606AC567893B",
     "is_mule": false,
     "score": 0.0,
     "decision": "SAFE",

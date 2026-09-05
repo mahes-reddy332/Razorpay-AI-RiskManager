@@ -43,6 +43,22 @@ class ConnectionManager:
 
 manager = ConnectionManager()
 
+# ---------------------------------------------------------------------------
+# App
+# ---------------------------------------------------------------------------
+app = FastAPI(
+    title="UPI Fraud Flow Tracer - Real-Time Scoring API",
+    description="Precomputed L1 risk scores with incremental Tier 0 updates.",
+    version="1.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.websocket("/ws/alerts")
 async def websocket_endpoint(websocket: WebSocket):
     await manager.connect(websocket)
@@ -85,22 +101,6 @@ FROZEN_CONFIG = {
     'manual_thresh': 0.5,
     'mcc_weight': 0.6,
 }
-
-# ---------------------------------------------------------------------------
-# App
-# ---------------------------------------------------------------------------
-app = FastAPI(
-    title="UPI Fraud Flow Tracer - Real-Time Scoring API",
-    description="Precomputed L1 risk scores with incremental Tier 0 updates.",
-    version="1.0.0",
-)
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 
 # ---------------------------------------------------------------------------

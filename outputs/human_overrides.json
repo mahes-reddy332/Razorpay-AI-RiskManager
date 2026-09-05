@@ -1,8 +1,83 @@
 {
+  "records": [
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "FLAG_MULE",
+      "reviewer_note": "Overridden by human reviewer for testing.",
+      "timestamp": "2026-08-28T16:33:36.067623Z"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-04T18:31:57.278799Z",
+      "previous_hash": "GENESIS_HASH_0000000000000000",
+      "hash": "f93cbbefc06dcba638cea64b1cbba2e8c645652bf3d48f3d71060c8916db46d0"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-04T19:13:37.271263Z",
+      "previous_hash": "f93cbbefc06dcba638cea64b1cbba2e8c645652bf3d48f3d71060c8916db46d0",
+      "hash": "2db9d1187da4ff14a2b422f19c9b32be3085e6da3bcad537ed1a6ac74e763e0d"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-04T19:39:22.820226Z",
+      "previous_hash": "2db9d1187da4ff14a2b422f19c9b32be3085e6da3bcad537ed1a6ac74e763e0d",
+      "hash": "dfbbf85373b84b750c0ef41d80f4129e3cf951ccc9128fa580885f4c9a11db98"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-04T19:56:08.976017Z",
+      "previous_hash": "dfbbf85373b84b750c0ef41d80f4129e3cf951ccc9128fa580885f4c9a11db98",
+      "hash": "ae70674c53637d6a6250c352c193e72707d5f34ed347df51d45c3b798204b5e0"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-04T20:34:05.904143Z",
+      "previous_hash": "ae70674c53637d6a6250c352c193e72707d5f34ed347df51d45c3b798204b5e0",
+      "hash": "1600ae9be78e0d5e37b24bef1a016d01741b1e9ce631d00d336918f4d6e00f98"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-05T06:31:51.272836Z",
+      "previous_hash": "1600ae9be78e0d5e37b24bef1a016d01741b1e9ce631d00d336918f4d6e00f98",
+      "hash": "b1bb7ecfc33c9248a6f5ec07d8b6959ee9c367be63c9496190d73a1eb9a8455a"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-05T06:41:11.044931Z",
+      "previous_hash": "b1bb7ecfc33c9248a6f5ec07d8b6959ee9c367be63c9496190d73a1eb9a8455a",
+      "hash": "fa27bd10d038410c1f69c500921049d6ce79651ab537f3a6e3cd59e07c95246d"
+    },
+    {
+      "account_id": "ACC_3EA468883310",
+      "override_decision": "SAFE",
+      "reviewer_note": "Verified legitimate payroll processor",
+      "timestamp": "2026-09-05T06:52:42.204880Z",
+      "previous_hash": "fa27bd10d038410c1f69c500921049d6ce79651ab537f3a6e3cd59e07c95246d",
+      "hash": "ce8c205f03b002c979f4b5ba51a1e7bb788bca5f86c1bff62749507394cdfe85"
+    }
+  ],
+  "last_hash": "ce8c205f03b002c979f4b5ba51a1e7bb788bca5f86c1bff62749507394cdfe85",
   "ACC_3EA468883310": {
     "account_id": "ACC_3EA468883310",
-    "override_decision": "FLAG_MULE",
-    "reviewer_note": "Overridden by human reviewer for testing.",
-    "timestamp": "2026-08-28T16:33:36.067623Z"
+    "override_decision": "SAFE",
+    "reviewer_note": "Verified legitimate payroll processor",
+    "timestamp": "2026-09-05T06:52:42.204880Z",
+    "previous_hash": "fa27bd10d038410c1f69c500921049d6ce79651ab537f3a6e3cd59e07c95246d",
+    "hash": "ce8c205f03b002c979f4b5ba51a1e7bb788bca5f86c1bff62749507394cdfe85"
   }
 }

@@ -1,52 +1,24 @@
 {
-  "synthetic_upi": {
-    "l1_only": {
-      "precision": 0.922,
-      "recall": 0.815,
-      "tp": 119,
-      "fp": 10,
-      "tn": 287,
-      "fn": 27
-    },
-    "combined": {
-      "precision": 0.917,
-      "recall": 0.911,
-      "f1": 0.914,
-      "tp": 133,
-      "fp": 12,
-      "tn": 285,
-      "fn": 13
-    },
-    "extrapolation": {
-      "fpr": 4.04,
-      "per_10k": 404,
-      "per_1m": 40404
-    }
+  "l1_only": {
+    "precision": 0.922,
+    "recall": 0.815,
+    "tp": 119,
+    "fp": 10,
+    "tn": 287,
+    "fn": 27
   },
-  "ibm_aml_benchmark": {
-    "total_txns": 5078345,
-    "total_accounts": 402551,
-    "test_split_accounts": 80511,
-    "test_split_mules": 619,
-    "total_caught_mules": 458,
-    "total_recall": 0.7399,
-    "total_precision": 0.0165,
-    "total_fp": 27359,
-    "auto_frozen_mules": 335,
-    "auto_frozen_recall": 0.5412,
-    "auto_frozen_precision": 0.0186,
-    "auto_frozen_fp": 17657,
-    "manual_review_mules": 123,
-    "manual_review_recall": 0.1987,
-    "manual_review_fp": 9702,
-    "safe_cleared_legit": 52533,
-    "typology_recall": {
-      "random_noise": 0.812,
-      "fan_in_gather": 0.770,
-      "stack_deep_layering": 0.744,
-      "bipartite_clearing": 0.720,
-      "cycle_bust_out": 0.714,
-      "fan_out_scatter": 0.690
-    }
+  "combined": {
+    "precision": 0.93,
+    "recall": 0.943,
+    "f1": 0.937,
+    "tp": 133,
+    "fp": 10,
+    "tn": 281,
+    "fn": 8
+  },
+  "extrapolation": {
+    "fpr": 3.44,
+    "per_10k": 343,
+    "per_1m": 34364
   }
 }

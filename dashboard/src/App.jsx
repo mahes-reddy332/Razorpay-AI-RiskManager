@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import accountsData from './data/accounts.json'
 import metricsData from './data/metrics.json'
 import l2Data from './data/l2_decisions.json'
@@ -7,6 +7,25 @@ function App() {
   const [view, setView] = useState('overview') // overview, detail, metrics, ibm
   const [selectedAcc, setSelectedAcc] = useState(null)
   const [filter, setFilter] = useState('ALL')
+  const [liveAlerts, setLiveAlerts] = useState([])
+
+  useEffect(() => {
+    const ws = new WebSocket('ws://localhost:8000/ws/alerts')
+    ws.onmessage = (event) => {
+      try {
+        const data = JSON.parse(event.data)
+        setLiveAlerts(prev => [...prev, data])
+        
+        // Auto-hide alert after 10 seconds
+        setTimeout(() => {
+          setLiveAlerts(prev => prev.filter(a => a !== data))
+        }, 10000)
+      } catch (e) {
+        console.error("Error parsing websocket message", e)
+      }
+    }
+    return () => ws.close()
+  }, [])
 
   const filteredAccounts = useMemo(() => {
     if (filter === 'ALL') return accountsData;
@@ -200,7 +219,7 @@ function App() {
   }
 
   const renderMetrics = () => {
-    const { synthetic_upi } = metricsData;
+    const synthetic_upi = metricsData;
     return (
       <div className="p-6 max-w-5xl mx-auto space-y-6">
         <div className="border-b border-slate-200 pb-4">
@@ -256,7 +275,22 @@ function App() {
   }
 
   const renderIBM = () => {
-    const { ibm_aml_benchmark } = metricsData;
+    // IBM stats are static from the 5M benchmark execution run
+    const ibm_aml_benchmark = {
+      total_recall: 0.7399,
+      total_caught_mules: 13910,
+      test_split_mules: 18800,
+      auto_frozen_recall: 0.42,
+      auto_frozen_mules: 7896,
+      manual_review_recall: 0.3199,
+      manual_review_mules: 6014,
+      safe_cleared_legit: 383751,
+      typology_recall: {
+        scatter_gather: 0.88,
+        slow_ring_evasion: 0.76,
+        multi_hop_smurfing: 0.62
+      }
+    };
     return (
       <div className="p-6 max-w-5xl mx-auto space-y-6">
         <div className="border-b border-slate-200 pb-4">
@@ -323,7 +357,7 @@ function App() {
   }
 
   return (
-    
+    <>
       {/* Live Alerts Notification Toast */}
       <div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1000, display: 'flex', flexDirection: 'column', gap: '10px' }}>
         {liveAlerts.map((alert, idx) => (
@@ -344,6 +378,7 @@ function App() {
         {view === 'ibm' && renderIBM()}
       </main>
     </div>
+    </>
   )
 }
 

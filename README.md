@@ -6,6 +6,13 @@ This repository contains a defense-only UPI Fraud Flow Tracer. It detects mule a
 
 ---
 
+## System Architecture
+
+![System Architecture Flow](docs/images/system_architecture.jpg)
+![Architecture Flowchart](docs/images/architecture_flowchart.png)
+
+---
+
 ## Tech Stack
 *   **Core Logic:** Python 3.11
 *   **Data Generation:** Pandas, Faker (Synthetic realistic data generation)
