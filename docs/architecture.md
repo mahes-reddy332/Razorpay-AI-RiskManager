@@ -5,6 +5,13 @@
 - **Design:** A custom Pandas-based transaction generator that simulates a 90-day UPI flow. It injects complex Mule archetypes (Structuring, Split/Re-converge, Commission-taking) alongside Hard Negatives (Salary Disbursers, Small Businesses, Dormant Purchases).
 - **Probabilistic Noise:** Merchant Category Codes (MCC) are assigned probabilistically. 10% of legitimate businesses receive high-risk MCCs, and 20% of mule cashouts route through compromised safe MCCs to model real-world edge cases.
 
+## 1.5 Containerization & Infrastructure
+To mirror a production environment, the heavy-lifting infrastructure is entirely containerized via **Docker**. 
+- **Kafka / Redpanda:** Streams live transactions with low latency.
+- **Apache Spark / PySpark:** Runs the Level 3 (Nightly Batch) graph algorithms over large historical data efficiently.
+- **Neo4j:** Provides a robust, disk-backed scalable graph database for deep relationship queries.
+Using Docker ensures consistency across development, testing, and production environments, decoupling the Python detection logic from the stateful streaming and batch architectures.
+
 ## 2. Methodology: Leakage Discovery and V2 Fix
 During the development of the Phase 4 (Topology) and Phase 8 (MCC) rules, the initial evaluation methodology (v1) was flawed. 
 - **The Leakage:** The evaluation suffered from threshold nudging (the topology threshold was lowered after inspecting false positives in the test set) and deterministic feature generation (safe MCCs perfectly correlated with legitimate hard-negatives).

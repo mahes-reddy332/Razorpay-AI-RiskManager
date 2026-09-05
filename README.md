@@ -15,6 +15,7 @@ This repository contains a defense-only UPI Fraud Flow Tracer. It detects mule a
 
 ## Tech Stack
 *   **Core Logic:** Python 3.11
+*   **Infrastructure:** Docker (for Kafka/Redpanda streaming and Apache Spark batch analytics)
 *   **Data Generation:** Pandas, Faker (Synthetic realistic data generation)
 *   **Graph Engine:** NetworkX (In-memory topological tracing)
 *   **Visualizations:** Matplotlib
