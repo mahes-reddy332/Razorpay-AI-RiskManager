@@ -98,6 +98,8 @@ While error rates rarely scale perfectly linearly in practice, large absolute fa
 
 This project requires **Python 3.11+**, **Node.js** (for the dashboard), and **Docker** (for Kafka/Redpanda streaming and Apache Spark batch analytics).
 
+![Docker Environment](docs/images/docker_setup.png)
+
 ### 1. Clone & Install
 ```bash
 git clone https://github.com/mahes-reddy332/Razorpay-AI-RiskManager.git
